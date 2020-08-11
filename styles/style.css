@@ -1,0 +1,125 @@
+.navbar-brand img{
+  width: 150px;
+  height:auto;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.login
+{
+  list-style-type: none;
+}
+.login a:hover
+{
+  text-decoration: none;
+}
+.body
+{
+  background-image: url("/img/earth.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  overflow-x: hidden;
+}
+#content
+{
+  display: none;
+}
+.carousel
+{
+  width:30%!important;
+  height:30%!important;
+  margin:0 auto;
+}
+.carousel img
+{
+  width:auto!important;
+  height:30vw!important;
+}
+.carousel-caption{
+  color:white;
+  background-color:rgba(0, 0, 0, 0.233)!important;
+}
+.carousel h5
+{
+  font-size: 1.5vw;
+}
+.carousel p
+{
+  font-size: 1.25vw;
+}
+.feed
+{
+  color: white;
+  background-color:rgba(0, 0, 0, 0.479);
+  padding: 10px 10px 10px 10px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.flip-box {
+ 
+  width: 450px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-box img{
+    width:450px;
+    height:auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotate3d(1,0,1,180deg);
+
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+
+}
+
+
+/* Style the back side */
+.flip-box-back {
+
+       
+  color:white;
+  transform: rotate3d(1,0,1,180deg);
+}
+.footer-content
+{
+  margin: 0 auto;
+}
+.cp{
+  color: white;
+}
+.footer-content ul li{
+  display: inline;
+  padding: 10px 10px 10px 10px;
+}
+.fa{
+ color: white;
+}
+.sticky-bottom
+{
+  background-color: black!important;
+}
