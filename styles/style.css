@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .navbar-brand img{
   width: 150px;
   height:auto;
@@ -6,6 +8,29 @@
   display: block;
   margin-top: 0;
 }
+.navbar a{
+  font-family: 'Karla', sans-serif;
+}
+
+.navbar .collapse .nav-item .nav-link:after {
+  content: '';
+  width: 0;
+  height: 1.5px;
+  display: block;
+  background:white;
+  transition: 300ms;
+
+}
+
+.navbar .collapse .nav-item .nav-link:hover:after {
+  width: 100%;
+}
+.dropdown-toggle::after{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
 .login
 {
   list-style-type: none;
@@ -57,7 +82,7 @@
   color: white;
   background-color:rgba(0, 0, 0, 0.479);
   padding: 10px 10px 10px 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
 
 }
 .flip-box {
