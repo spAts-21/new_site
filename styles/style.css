@@ -47,32 +47,58 @@
   margin:0;
   overflow-x: hidden;
 }
+.title {
+  background-color:black;
+  color:white;
+}
+
+.img {
+  min-height: 450px;
+  background: center/cover no-repeat;
+}
+
+
+.col h5{
+  word-wrap: break-word;
+  font-size: 18px;
+}
+
+.col{
+  flex:3;
+  -ms-flex:3;
+  width:33.33%;
+  transition:transform 0.2s ease-out;
+}
+
+.col:hover{
+  flex-grow: 5;
+}
+
+.col:first-child {
+  margin-right: -5vw;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, calc(100% - 10vw) 100%, 0 100%);
+  text-align: left;
+}
+.col:nth-child(2) {
+  clip-path: polygon(10vw 0, calc(100% - 15px) 0, calc(100% - 10vw) 100%, 15px 100%);
+  margin: 0 -5vw;
+  text-align: center;
+}
+
+.col:last-child {
+  clip-path: polygon(10vw 0, 100% 0, 100% 100%, 15px 100%);
+  margin-left: -5vw;
+  text-align: right;
+}
+@media only screen and (max-width:768px){
+ .col h5{
+   font-size:15px!important;
+ } 
+}
+
 #content
 {
   display: none;
-}
-.carousel
-{
-  width:30%!important;
-  height:30%!important;
-  margin:0 auto;
-}
-.carousel img
-{
-  width:auto!important;
-  height:30vw!important;
-}
-.carousel-caption{
-  color:white;
-  background-color:rgba(0, 0, 0, 0.233)!important;
-}
-.carousel h5
-{
-  font-size: 1.5vw;
-}
-.carousel p
-{
-  font-size: 1.25vw;
 }
 .feed
 {
