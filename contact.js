@@ -24,7 +24,7 @@ $(document).ready(function () {
         /* *****************************************************************
         * DO SOMETHING WITH workbook: Converting Excel value to Json       *
         ********************************************************************/
-        var first_sheet_name = workbook.SheetNames[0];
+        var first_sheet_name = workbook.SheetNames[1];
         /* Get worksheet */
         var worksheet = workbook.Sheets[first_sheet_name];
 
@@ -50,18 +50,18 @@ $(document).ready(function () {
                         '</span>' +
                     '</td>' +
                     '<td>' +
-                        value.Email_id +
+                        value["Email id"]+
                     '</td>' +
                     '<td>' +
-                        value.phone_number +
+                        value["Phone number"] +
                     '</td>' +
 					'<td>' +
-                        value.fb_link +
+                        value["Fb link"] +
                     '</td>' +
 					'<td>' +
-                        value.Linkedin_link +
+                        value["Linkedin link"] +
                     '</td>'
-				
+				+
                 '</tr>'
             );
 
@@ -70,8 +70,7 @@ $(document).ready(function () {
     });
 
 
-        } // end: Ajax success API call
+        }); // end: Ajax success API call
 
-    }); // end: of Ajax call
+     // end: of Ajax call
 
-}); // end: document.ready()

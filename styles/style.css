@@ -67,6 +67,7 @@
   flex:3;
   -ms-flex:3;
   width:33.33%;
+  transition:transform 0.2s ease-out;
 }
 
 .col:hover{
@@ -98,29 +99,6 @@
 #content
 {
   display: none;
-}
-.carousel
-{
-  width:30%!important;
-  height:30%!important;
-  margin:0 auto;
-}
-.carousel img
-{
-  width:auto!important;
-  height:30vw!important;
-}
-.carousel-caption{
-  color:white;
-  background-color:rgba(0, 0, 0, 0.233)!important;
-}
-.carousel h5
-{
-  font-size: 1.5vw;
-}
-.carousel p
-{
-  font-size: 1.25vw;
 }
 .feed
 {
