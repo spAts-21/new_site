@@ -60,8 +60,11 @@ $(document).ready(function () {
                     '</td>' +
 					'<td>' +
                         value["Linkedin link"] +
+                    '</td>' + 
+					'<td>' +
+                        value.Photo +
                     '</td>'
-				+
+					+
                 '</tr>'
             );
 
