@@ -24,7 +24,7 @@ $(document).ready(function () {
         /* *****************************************************************
         * DO SOMETHING WITH workbook: Converting Excel value to Json       *
         ********************************************************************/
-        var first_sheet_name = workbook.SheetNames[2];
+        var first_sheet_name = workbook.SheetNames[1];
         /* Get worksheet */
         var worksheet = workbook.Sheets[first_sheet_name];
 
@@ -38,7 +38,11 @@ $(document).ready(function () {
             $('#showExcel').append(
 
                 '<tr>' +
-                    '<th scope="row">' +
+					'<th scope="row">' +
+					'<td>' +
+                        value.Photo +
+                    '</td>' +
+                    
                         value["Name"] +
                     '</th>' + 
                     '<td>' +
@@ -61,10 +65,7 @@ $(document).ready(function () {
 					'<td>' +
                         value["Linkedin link"] +
                     '</td>' + 
-					'<td>' +
-                        value.Photo +
-                    '</td>'
-					+
+					
                 '</tr>'
             );
 
