@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 		 $.each(jsonData, function (index, value) {
 
-			codeBlock = '<div id="person" style="border:thin solid black; background-color:white">' + '<img src = value.Photo>' + '<br>' + value["Name"] + value["Post"] + value["Department"] + 
+			codeBlock = '<div id="person" style="border:thin solid black; padding: 5px">' + '<img src = value.Photo>' + '<br>' + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + <a href = value["Fb link"]>fb</a> +  value["Linkedin link"]  + '</div>' + '<br>' + '<br>';
 			
 				
