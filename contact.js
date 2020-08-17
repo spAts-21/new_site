@@ -37,22 +37,8 @@ $(document).ready(function () {
 
             $('#showExcel').append(
 
-				'<div class="person" id="showExcel">' + 
-				'<center>' + '<div class="container pl-4 pr-4">' + 
-				'<div class="row justify-content-center">' + 
-				'<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0">' + 
-				'<div class="member-card bg-light p-3">' +
-				value.Photo +
-				'<br>' +                                 
-				value["Name"] +  
-				'<br>' + 
-				'<div class="member-social-strip">' +
-				
-				value["Email id"] + '<br>'  +   value["Fb link"] +  '<br>'                            
-				value["Linkedin link"] + '<br>' +
-				
-				'</div>' + '</div>' + '</div>' + '</div>' + '</div>' + '</div>'
-              
+				value.Photo +'<br>' +   value["Name"] +  '<br>' + value["Email id"] + '<br>'  +  
+				value["Fb link"] +  '<br>' + value["Linkedin link"] + '<br>'    
             );
 
         });
