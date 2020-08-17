@@ -24,11 +24,11 @@
 
 		$.getJSON("Heads.json", function(data) {
 		$.each(data.person, function(i, f) {
-          //var tblRow = f.name + f.post + f.department + f.emailId + f.phoneNumber + f.fbLink +  f.linkedinLink
+          var tblRow = f.name + f.post + f.department + f.emailId + f.phoneNumber + f.fbLink +  f.linkedinLink
            $(tblRow).appendTo("#showExcel");
 		   
 		   
-				var name = f.name;
+		/***		var name = f.name;
 				var mail = f.emailId;
 				var fb = f.fbLink;
 				var lin = f.linkedinLink;
@@ -40,7 +40,7 @@
 			document.getElementById("fbl").href = fb;
 			document.getElementById("linl").href = lin;
 		   
-		   
+		   ***/
 		});
 
 		});
