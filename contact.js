@@ -37,18 +37,20 @@ $(document).ready(function () {
 		 $.each(jsonData, function (index, value) {
 
 			
-
-			'<div id="person" style="border:thin solid black; padding: 5px">';
-			
-			function image() { 
-            var img = document.createElement('img'); 
-            img.src = value.Photo; 
+			function imagefun() { 
+				var x = document.createElement('img'); 
+				x.setAttribute("src", value.Photo);
+				document.body.appendChild(x);
             }    
 			
-			document.write('<br>');
+
+			'<div id="person" style="border:thin solid black; padding: 5px">' + 'imagefun()';
+			
+			var mybr = document.createElement('br');
+			someElement.appendChild(mybr);
 			
 			value["Name"];
-			document.write('<br>');
+			/*  document.write('<br>');
 			value["Post"];
 			document.write('<br>');
 			value["Department"];
@@ -59,7 +61,7 @@ $(document).ready(function () {
 			document.write('<br>');
 			'<a href = value["Linkedin link"]>fb</a>' + '</div>';
 			document.write('<br>');
-			document.write('<br>');
+			document.write('<br>');  */
 				
 				
 			$(function()).appendTo("#showExcel");	
