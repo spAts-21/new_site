@@ -35,11 +35,10 @@ $(document).ready(function () {
 
 		 $.each(jsonData, function (index, value) {
 
-            $('#showExcel').append(
-
-				value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-				value["Email id"] + value["Fb link"] +  value["Linkedin link"]    
-            );
+			var codeBlock = '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
+				
+			document.getElementById("showExcel").innerHTML = codeBlock
 
         });
 
