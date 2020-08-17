@@ -37,8 +37,8 @@ $(document).ready(function () {
 
             $('#showExcel').append(
 
-				value.Photo +'<br>' +   value["Name"] +  '<br>' + value["Email id"] + '<br>'  +  
-				value["Fb link"] +  '<br>' + value["Linkedin link"] + '<br>'    
+				value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+				value["Email id"] + value["Fb link"] +  value["Linkedin link"]    
             );
 
         });
