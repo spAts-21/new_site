@@ -32,18 +32,16 @@ $(document).ready(function () {
         /************************ End of conversion ************************/
 
         console.log(jsonData);
-		
-		var codeBlock = '';
+		codeBlock = '';
 
 		 $.each(jsonData, function (index, value) {
 
-			codeBlock += '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] + value["Linkedin link"]  + '</div>' ;
+			codeBlock = '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
 				
+			$(codeBlock).appendTo("#showExcel");	
         });
-		
-		document.getElementById("showExcel").innerHTML = codeBlock
-		
+	
     });
 
 
