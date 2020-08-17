@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .navbar{
   background-color: rgba(0, 0, 0, 0.851)!important;
@@ -13,7 +13,7 @@
   margin-top: 0;
 }
 .navbar a{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
  
 }
@@ -62,7 +62,7 @@
 .col{
   flex:3;
   -ms-flex:3;
-  width:33.33%;
+  
   transition: all 0.25s ease-out, flex-grow 0.35s ease 0.4s, -webkit-box-flex 0.35s ease 0.4s, -ms-flex-positive 0.35s ease 0.4s;
   
 }
@@ -74,10 +74,14 @@
 .col:first-child {
   margin-right: -5vw;
   clip-path: polygon(0 0, calc(100%) 0, calc(100% - 5vw) 100%, 0 100%);
+  padding-right: 0!important;
+  padding-left: 0!important;
 }
 .col:nth-child(2) {
   clip-path: polygon(10vw 0, calc(100%) 0, calc(100% - 5vw) 100%, 15px 100%);
   margin: 0 -5vw;
+  padding-right: 0!important;
+  padding-left: 0!important;
 }
 
 .col:last-child {
@@ -100,7 +104,8 @@
   background-color:rgba(0, 0, 0, 0.479);
   color:white;
   width: 100%;
-  padding: 0 36% 0 18%;
+  padding: 0 18% 0 18%;
+  min-height: 30%;
   transition: background 0.25s ease-out, color 0.25s ease-out, font-size 0.35s ease 0.5s, text-shadow 0.25s ease-out, padding 0.35s ease 0.5s; 
 }
 .col:hover >.img .caption{
@@ -178,7 +183,7 @@
 .fa{
  color: white;
 }
-.fixed-bottom
+.sticky-bottom
 {
   background-color: black!important;
 }
