@@ -50,18 +50,18 @@ $(document).ready(function () {
 			someElement.appendChild(mybr);
 			
 			value["Name"];
-			/*  document.write('<br>');
+			document.write('<br>');
 			value["Post"];
 			document.write('<br>');
 			value["Department"];
 			document.write('<br>');
 			value["Email id"];
 			document.write('<br>');
-			'<a href = value["Fb link"]>fb</a>' 
+			'<a href = value["Fb link"]>fb</a>';
 			document.write('<br>');
 			'<a href = value["Linkedin link"]>fb</a>' + '</div>';
 			document.write('<br>');
-			document.write('<br>');  */
+			document.write('<br>');
 				
 				
 			$(function()).appendTo("#showExcel");	
