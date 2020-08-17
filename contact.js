@@ -34,15 +34,17 @@ $(document).ready(function () {
         console.log(jsonData);
 		codeBlock = '';
 
+	
+
 		 $.each(jsonData, function (index, value) {
 
 			var codeBlock += '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
 				
-			document.getElementById("showExcel").innerHTML = codeBlock
-
         });
-
+		
+		document.getElementById("showExcel").innerHTML = codeBlock
+		$(codeBlock).appendTo("#showExcel");
     });
 
 
