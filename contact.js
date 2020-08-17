@@ -60,7 +60,7 @@ $(document).ready(function () {
 			document.write("<br>");
 				
 				
-			$().appendTo("#showExcel");	
+			$(function()).appendTo("#showExcel");	
         });
 	
     });
