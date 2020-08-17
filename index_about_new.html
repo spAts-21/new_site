@@ -22,11 +22,10 @@
 		
 		$(function() {
 
-		$.getJSON("Heads.json", function(data) {
+		
 		$.each(data.person, function(i, f) {
-          var tblRow = f.Name + f.Post + f.Department + f.Email_id + f.phone_number + f.fb_link +  f.linkedin_link + f.Photo
-           $(tblRow).appendTo("#showExcel");
-		   
+        // var tblRow = f.Name + f.Post + f.Department + f.Email_id + f.phone_number + f.fb_link +  f.linkedin_link + f.Photo
+         //  $(tblRow).appendTo("#showExcel");
 		   
 				var name = f.Name;
 				var mail = f.Email_id;
@@ -35,16 +34,16 @@
 				var photo = f.Photo;
 			 
 			document.getElementById("photo").src = photo;	
-			document.getElementById("name").name = name;
+			document.getElementById("name").value = name;
 			document.getElementById("mail").href= mail ;
 			document.getElementById("fbl").href = fb;
 			document.getElementById("linl").href = lin;
 		   
 		  
+		  
 		});
 
-		});
-
+		
 		});
 
 		</script>
