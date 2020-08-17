@@ -44,7 +44,7 @@ $(document).ready(function () {
         });
 		
 		document.getElementById("showExcel").innerHTML = codeBlock
-		$(codeBlock).appendTo("#showExcel");
+		
     });
 
 
