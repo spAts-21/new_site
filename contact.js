@@ -33,6 +33,42 @@ $(document).ready(function () {
 
         console.log(jsonData);
 
+		 $.each(jsonData, function (index, value) {
+
+            $('#showExcel').append(
+
+                '<tr>' +
+                    '<th scope="row">' +
+                        value["Name"] +
+                    '</th>' + 
+                    '<td>' +
+                        value["Post"] +
+                    '</td>' +  
+                    '<td>' +
+                        '<span class="badge badge-primary badge-pill p-2">' +
+                            value.Department +
+                        '</span>' +
+                    '</td>' +
+                    '<td>' +
+                        value["Email id"]+
+                    '</td>' +
+                    '<td>' +
+                        value["Phone number"] +
+                    '</td>' +
+					'<td>' +
+                        value["Fb link"] +
+                    '</td>' +
+					'<td>' +
+                        value["Linkedin link"] +
+                    '</td>' + 
+					'<td>' +
+                        value.Photo +
+                    '</td>'
+					+
+                '</tr>'
+            );
+
+        });
 
     });
 
