@@ -25,12 +25,12 @@
 		
 		$.each(data.person, function(i, f) {
         
-		   
+				var photo = f.Photo;
 				var name = f.Name;
 				var mail = f.Email_id;
 				var fb = f.fb_link;
 				var lin = f.linkedin_link;
-				var photo = f.Photo;
+				
 			 
 			document.getElementById("photo").src = photo;	
 			document.getElementById("name").value = name;
@@ -46,7 +46,7 @@
 		});
 		
 		Object.assign(
-			document.querySelector('.person').style, 
+			document.querySelector('. member-card_bg-light_p-3').style
 		  {
 			background-color: #cfcfe4;
 			border: 5px solid black;
@@ -72,21 +72,19 @@
                     
 			<div class="person" id="showExcel">
 
-				
-				<center>
 				<div class="container pl-4 pr-4">
 				<div class="row justify-content-center">
 				<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0">
-				<div class="member-card bg-light p-3">
+				<div class="member-card_bg-light_p-3">
 				<img id="photo">
 				<br>                                
 				<div class="member-name" id="name"> </div>  
 				<br>
 				<div class="member-social-strip">
 				
-				<a id="mail"><i class="fas fa-envelope"></i></a>                                    
-				<a id="fbl"><i class="fab fa-facebook"></i></a>                                    
-				<a id="linl"><i class="fab fa-linkedin"></i></a>
+				<a id="mail"><i class="fas fa-envelope"></i></a>       <br>                             
+				<a id="fbl"><i class="fab fa-facebook"></i></a>        <br>                            
+				<a id="linl"><i class="fab fa-linkedin"></i></a>		<br>
 				
 				</div></div></div>  
 				
