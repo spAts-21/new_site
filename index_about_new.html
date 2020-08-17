@@ -18,21 +18,21 @@
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.min.js"></script>
         <script type="text/javascript" lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
-		<script type="text/javascript" src="Heads.json">
+		<script type="text/javascript" src="contact.js">
 		
 		$(function() {
 
 		$.getJSON("Heads.json", function(data) {
 		$.each(data.person, function(i, f) {
-          var tblRow = f.name + f.post + f.department + f.emailId + f.phoneNumber + f.fbLink +  f.linkedinLink
+          var tblRow = f.Name + f.Post + f.Department + f.Email_id + f.phone_number + f.fb_link +  f.linkedin_link + f.Photo
            $(tblRow).appendTo("#showExcel");
 		   
 		   
-		/***		var name = f.name;
-				var mail = f.emailId;
-				var fb = f.fbLink;
-				var lin = f.linkedinLink;
-				var photo = f.photo;
+				var name = f.Name;
+				var mail = f.Email_id;
+				var fb = f.fb_link;
+				var lin = f.linkedin_link;
+				var photo = f.Photo;
 			 
 			document.getElementById("photo").src = photo;	
 			document.getElementById("name").name = name;
@@ -40,7 +40,7 @@
 			document.getElementById("fbl").href = fb;
 			document.getElementById("linl").href = lin;
 		   
-		   ***/
+		  
 		});
 
 		});
@@ -65,12 +65,32 @@
                     
 			<div id="showExcel">
 
+				<section style="background-color: #cfcfe4;" class="pt-4 pb-4">
+				<center>
+				<div class="container pl-4 pr-4">
+				<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0">
+				<div class="member-card bg-light p-3">
+				<img id="photo">
+				<br>                                
+				<div class="member-name" id="name"> </div>  
+				<br>
+				<div class="member-social-strip">
 				
+				<a id="mail"><i class="fas fa-envelope"></i></a>                                    
+				<a id="fbl"><i class="fab fa-facebook"></i></a>                                    
+				<a id="linl"><i class="fab fa-linkedin"></i></a>
+				
+				</div></div></div>  
+				
+			</div>
+
+                </div>
             </div>
         </div>
 
         <!-- my script reference -->
-        <script type="text/javascript" src="Heads.json"></script>
+        <script type="text/javascript" src="contact.js"></script>
 
         <!-- footer -->
         <div class="grey heavy-rain-gradient">
