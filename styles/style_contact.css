@@ -11,6 +11,8 @@ html, body {
 }
 
 . person {
+		background-color: #cfcfe4;
+		class="pt-4 pb-4";
 		border: 2px solid black;
 		padding: 5px;
 		
