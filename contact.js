@@ -37,36 +37,22 @@ $(document).ready(function () {
 
             $('#showExcel').append(
 
-                '<tr>' +
-					'<th scope="row">' +
-					'<td>' +
-                        value.Photo +
-                    '</td>' +
-                    
-                        value["Name"] +
-                    '</th>' + 
-                    '<td>' +
-                        value["Post"] +
-                    '</td>' +  
-                    '<td>' +
-                        '<span class="badge badge-primary badge-pill p-2">' +
-                            value.Department +
-                        '</span>' +
-                    '</td>' +
-                    '<td>' +
-                        value["Email id"]+
-                    '</td>' +
-                    '<td>' +
-                        value["Phone number"] +
-                    '</td>' +
-					'<td>' +
-                        value["Fb link"] +
-                    '</td>' +
-					'<td>' +
-                        value["Linkedin link"] +
-                    '</td>' + 
-					
-                '</tr>'
+				'<div class="person" id="showExcel">' + 
+				'<center>' + '<div class="container pl-4 pr-4">' + 
+				'<div class="row justify-content-center">' + 
+				'<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0">' + 
+				'<div class="member-card bg-light p-3">' +
+				value.Photo +
+				'<br>' +                                 
+				value["Name"] +  
+				'<br>' + 
+				'<div class="member-social-strip">' +
+				
+				value["Email id"] + '<br>'  +   value["Fb link"] +  '<br>'                            
+				value["Linkedin link"] + '<br>' +
+				
+				'</div>' + '</div>' + '</div>' + '</div>' + '</div>' + '</div>'
+              
             );
 
         });
