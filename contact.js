@@ -32,41 +32,18 @@ $(document).ready(function () {
         /************************ End of conversion ************************/
 
         console.log(jsonData);
+		
+		var codeBlock = '';
 
-        $.each(jsonData, function (index, value) {
+		 $.each(jsonData, function (index, value) {
 
-            $('#showExcel').append(
-
-                '<tr>' +
-                    '<th scope="row">' +
-                        value["Name"] +
-                    '</th>' + 
-                    '<td>' +
-                        value["Post"] +
-                    '</td>' +  
-                    '<td>' +
-                        '<span class="badge badge-primary badge-pill p-2">' +
-                            value.Department +
-                        '</span>' +
-                    '</td>' +
-                    '<td>' +
-                        value["Email id"]+
-                    '</td>' +
-                    '<td>' +
-                        value["Phone number"] +
-                    '</td>' +
-					'<td>' +
-                        value["Fb link"] +
-                    '</td>' +
-					'<td>' +
-                        value["Linkedin link"] +
-                    '</td>'
-				+
-                '</tr>'
-            );
-
+			codeBlock += '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] + value["Linkedin link"]  + '</div>' ;
+				
         });
-
+		
+		document.getElementById("showExcel").innerHTML = codeBlock
+		
     });
 
 
