@@ -38,21 +38,19 @@
 			document.getElementById("fbl").href = fb;
 			document.getElementById("linl").href = lin;
 		   
-		  
+			f.assign(
+			document.querySelector('#showExcel').style
+		  {
+			background-color: #4dd2ff;
+			border: 15px solid black;
+			padding: 15px;
+		  }
+		)
 		  
 		});
 
 		
 		});
-		
-		Object.assign(
-			document.querySelector('. member-card_bg-light_p-3').style
-		  {
-			background-color: #cfcfe4;
-			border: 5px solid black;
-			padding: 5px;
-		  }
-		)
 
 		</script>
     </head>
@@ -72,10 +70,9 @@
                     
 			<div class="person" id="showExcel">
 
-				<div class="container pl-4 pr-4">
 				<div class="row justify-content-center">
 				<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0">
-				<div class="member-card_bg-light_p-3">
+				<div class="member-card bg-light p-3">
 				<img id="photo">
 				<br>                                
 				<div class="member-name" id="name"> </div>  
@@ -89,8 +86,7 @@
 				</div></div></div>  
 				
 			</div>
-
-                </div>
+   
             </div>
         </div>
 
