@@ -31,21 +31,19 @@ $(document).ready(function () {
         var jsonData = XLSX.utils.sheet_to_json(worksheet, { raw: true });
         /************************ End of conversion ************************/
 
-        
+        console.log(jsonData);
 		
-		codeBlock = '';
-
-	
+		var codeBlock = '';
 
 		 $.each(jsonData, function (index, value) {
 
-			var codeBlock += '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
+			codeBlock += '<div class="person">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] + value["Linkedin link"]  + '</div>' ;
 				
         });
 		
 		document.getElementById("showExcel").innerHTML = codeBlock
-		console.log(jsonData);
+		
     });
 
 
