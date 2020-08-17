@@ -46,22 +46,20 @@ $(document).ready(function () {
 
 			'<div id="person" style="border:thin solid black; padding: 5px">' + 'imagefun()';
 			
-			var mybr = document.createElement('br');
-			someElement.appendChild(mybr);
-			
+			document.write('<br/>');
 			value["Name"];
-			document.write('<br>');
+			document.write('<br/>');
 			value["Post"];
-			document.write('<br>');
+			document.write('<br/>');
 			value["Department"];
-			document.write('<br>');
+			document.write('<br/>');
 			value["Email id"];
-			document.write('<br>');
+			document.write('<br/>');
 			'<a href = value["Fb link"]>fb</a>';
-			document.write('<br>');
-			'<a href = value["Linkedin link"]>fb</a>' + '</div>';
-			document.write('<br>');
-			document.write('<br>');
+			document.write('<br/>');
+			'<a href = value["Linkedin link"]>' + fb + '</a>' + '</div>';
+			document.write('<br/>');
+			document.write('<br/>');
 				
 				
 			$(function()).appendTo("#showExcel");	
