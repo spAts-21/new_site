@@ -31,7 +31,8 @@ $(document).ready(function () {
         var jsonData = XLSX.utils.sheet_to_json(worksheet, { raw: true });
         /************************ End of conversion ************************/
 
-        console.log(jsonData);
+        
+		
 		codeBlock = '';
 
 	
@@ -44,7 +45,7 @@ $(document).ready(function () {
         });
 		
 		document.getElementById("showExcel").innerHTML = codeBlock
-		
+		console.log(jsonData);
     });
 
 
