@@ -37,7 +37,7 @@ $(document).ready(function () {
 		 $.each(jsonData, function (index, value) {
 			
 
-			codeBlock = '<div id="person" border = "thick solid black">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			codeBlock = '<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
 				
 			$(codeBlock).appendTo("#showExcel");	
