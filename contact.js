@@ -24,7 +24,7 @@ $(document).ready(function () {
         /* *****************************************************************
         * DO SOMETHING WITH workbook: Converting Excel value to Json       *
         ********************************************************************/
-        var first_sheet_name = workbook.SheetNames[1];
+        var first_sheet_name = workbook.SheetNames[2];
         /* Get worksheet */
         var worksheet = workbook.Sheets[first_sheet_name];
 
