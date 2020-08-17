@@ -32,15 +32,35 @@ $(document).ready(function () {
         /************************ End of conversion ************************/
 
         console.log(jsonData);
-		codeBlock = '';
+		
 
 		 $.each(jsonData, function (index, value) {
 
-			codeBlock = '<div id="person" style="border:thin solid black; padding: 5px">' + '<img src = value.Photo>' + '<br>' + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + <a href = value["Fb link"]>fb</a> +  value["Linkedin link"]  + '</div>' + '<br>' + '<br>';
+			function image() { 
+            var img = document.createElement('img'); 
+            img.src = value.Photo; 
+            }  
+
+			'<div id="person" style="border:thin solid black; padding: 5px">' + '<img>';  
 			
+			document.write("<br>");
+			
+			value["Name"];
+			document.write("<br>");
+			value["Post"];
+			document.write("<br>");
+			value["Department"];
+			document.write("<br>");
+			value["Email id"];
+			document.write("<br>");
+			'<a href = value["Fb link"]>fb</a>' 
+			document.write("<br>");
+			'<a href = value["Linkedin link"]>fb</a>' + '</div>';
+			document.write("<br>");
+			document.write("<br>");
 				
-			$(codeBlock).appendTo("#showExcel");	
+				
+			$().appendTo("#showExcel");	
         });
 	
     });
