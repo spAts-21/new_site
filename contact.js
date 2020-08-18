@@ -36,15 +36,15 @@ $(document).ready(function () {
 
 		 $.each(jsonData, function (index, value) {
 
-		/*	
+			
 			function imagefun() { 
 				var x = document.createElement('img'); 
 				x.setAttribute("src", value.Photo);
 				document.body.appendChild(x);
             }    
-			*/
+			
 
-			'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + '</div>';
+			'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
 			//')'
 			//imagefun() +
 			//document.write('<br/>');
@@ -60,13 +60,13 @@ $(document).ready(function () {
 			//document.write('<br/>');
 			// 'document.write('<br/> +
 				
-			
+			$("function()").appendTo("#showExcel");
         });
-		$("function()").appendTo("#showExcel");	
+			
     });
 
 
-        }); // end: Ajax success API call
+}); // end: Ajax success API call
 
      // end: of Ajax call
 
