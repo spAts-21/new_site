@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
-		codeBlock='';
+		
 		 $.each(jsonData, function (index, value) {
 
 			
@@ -43,10 +43,10 @@ $(document).ready(function () {
 				document.body.appendChild(x);
             }    
 			
-			codeBlock += '<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			'<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + document.write('<br/>') + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
 				
-			//$(codeBlock).appendTo("#showExcel");	
+			
 			
 			//'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
 			//')'
@@ -64,7 +64,7 @@ $(document).ready(function () {
 			//document.write('<br/>');
 			// 'document.write('<br/> +
 				
-			//$("function()").appendTo("#showExcel");
+			
         });
 			$("function()").appendTo("#showExcel");
     });
