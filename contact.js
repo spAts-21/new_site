@@ -38,11 +38,11 @@ $(document).ready(function () {
 		 $.each(jsonData, function(index, value) {
 
 			
-			function imagefun() { 
+			/*function imagefun() { 
 				var x = document.createElement('img'); 
 				x.setAttribute("img.src", value.Photo);
 				document.body.appendChild(x);
-            }    
+            }*/
 			
 			codeBlock += '<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>';
