@@ -33,7 +33,8 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
-		
+		 codeBlock='';
+
 		 $.each(jsonData, function(index, value) {
 
 			
@@ -43,7 +44,7 @@ $(document).ready(function () {
 				document.body.appendChild(x);
             }    
 			
-			'<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			codeBlock += '<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>';
 				
 			
