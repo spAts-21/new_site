@@ -44,21 +44,20 @@ $(document).ready(function () {
             }    
 			
 
-			'<div id="person" style="border:thin solid black; padding: 5px">' + 'imagefun()' + 'document.write('<br/>')' + value["Name"];
-			
+			'<div id="person" style="border:thin solid black; padding: 5px">' + 'imagefun()' + value["Name"] + '</div>';
+			//')'
 			//document.write('<br/>');
 			//value["Post"];
-			//document.write('<br/>');
 			//value["Department"];
 			//document.write('<br/>');
 			//value["Email id"];
 			//document.write('<br/>');
 			//'<a href = value["Fb link"]>fb</a>';
 			//document.write('<br/>');
-			//'<a href = value["Linkedin link"]>' + fb + '</a>' + '</div>';
+			//'<a href = value["Linkedin link"]>' + fb + '</a>' 
 			//document.write('<br/>');
 			//document.write('<br/>');
-				
+			// 'document.write('<br/> +
 				
 			$(function()).appendTo("#showExcel");	
         });
