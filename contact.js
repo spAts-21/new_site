@@ -36,13 +36,13 @@ $(document).ready(function () {
 
 		 $.each(jsonData, function (index, value) {
 
-			
+		/*	
 			function imagefun() { 
 				var x = document.createElement('img'); 
 				x.setAttribute("src", value.Photo);
 				document.body.appendChild(x);
             }    
-			
+			*/
 
 			'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + '</div>';
 			//')'
