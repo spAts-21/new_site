@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
-		 //codeBlock='';
+		codeBlock='';
 
 		 $.each(jsonData, function(index, value) {
 
