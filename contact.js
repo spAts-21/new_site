@@ -44,9 +44,9 @@ $(document).ready(function () {
             }    
 			
 			'<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"] + '<br/>' + '</div>' ;
 				
-		
+			
 			
 			//'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
 			//')'
