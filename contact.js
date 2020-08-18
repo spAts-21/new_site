@@ -44,8 +44,9 @@ $(document).ready(function () {
             }    
 			
 
-			'<div id="person" style="border:thin solid black; padding: 5px">' + imagefun() + value["Name"] + '</div>';
+			'<div id="person" style="border:thin solid black; padding: 5px">' +  value["Name"] + '</div>';
 			//')'
+			//imagefun() +
 			//document.write('<br/>');
 			//value["Post"];
 			//value["Department"];
