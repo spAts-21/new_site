@@ -34,7 +34,7 @@ $(document).ready(function () {
         console.log(jsonData);
 		
 		
-		 $.each(jsonData, function ele(index, value) {
+		 $.each(jsonData, function(index, value) {
 
 			
 			function imagefun() { 
@@ -44,29 +44,11 @@ $(document).ready(function () {
             }    
 			
 			'<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
-				
-			
-			
-			//'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
-			//')'
-			//imagefun() +
-			//document.write('<br/>');
-			//value["Post"];
-			//value["Department"];
-			//document.write('<br/>');
-			//value["Email id"];
-			//document.write('<br/>');
-			//'<a href = value["Fb link"]>fb</a>';
-			//document.write('<br/>');
-			//'<a href = value["Linkedin link"]>' + fb + '</a>' 
-			//document.write('<br/>');
-			//document.write('<br/>');
-			// 'document.write('<br/> +
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>';
 				
 			
         });
-			$("function ele()").appendTo("#showExcel");
+			$("function()").appendTo("#showExcel");
     });
 
 
