@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.851)!important;
 }
 .navbar-brand img{
-  width: 150px;
+  width: 200px;
   height:auto;
   margin-top: 10px;
 }
@@ -152,6 +152,7 @@
 }
 
 /* Position the front and back side */
+
 .flip-box-front, .flip-box-back {
   position: absolute;
   width: 100%;
@@ -168,6 +169,44 @@
        
   color:white;
   transform: rotate3d(1,0,1,180deg);
+}
+
+.card{
+  color: white;
+  background-color:rgba(0, 0, 0, 0.479);
+  padding:0 8.5% 0 8.5%;
+  text-align:left;
+  border: none;
+  
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.card-content{
+  background-color:black;
+  color: white;
+  min-height:100%;
+}
+.card a:link{
+  text-decoration:none;
+  
+}
+.card p{
+  margin-bottom: 0!important;
+}
+.card-content:after {
+  content: '';
+  height: 0;
+  width:100%;
+  display: block;
+  background:blue;
+  transition: 300ms;
+
+}
+
+.card-content:hover:after {
+  height: 6px;
 }
 .footer-content
 {
