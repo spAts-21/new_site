@@ -47,15 +47,15 @@ $(document).ready(function () {
 			'<div id="person" style="border:thin solid black; padding: 5px">' + 'imagefun()' + 'document.write('<br/>')' + value["Name"];
 			
 			//document.write('<br/>');
-			value["Post"];
+			//value["Post"];
 			//document.write('<br/>');
-			value["Department"];
+			//value["Department"];
 			//document.write('<br/>');
-			value["Email id"];
+			//value["Email id"];
 			//document.write('<br/>');
-			'<a href = value["Fb link"]>fb</a>';
+			//'<a href = value["Fb link"]>fb</a>';
 			//document.write('<br/>');
-			'<a href = value["Linkedin link"]>' + fb + '</a>' + '</div>';
+			//'<a href = value["Linkedin link"]>' + fb + '</a>' + '</div>';
 			//document.write('<br/>');
 			//document.write('<br/>');
 				
