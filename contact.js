@@ -44,7 +44,7 @@ $(document).ready(function () {
             }    
 			
 
-			'<div id="person" style="border:thin solid black; padding: 5px">' +  value["Name"] + '</div>';
+			'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + '</div>';
 			//')'
 			//imagefun() +
 			//document.write('<br/>');
@@ -60,9 +60,9 @@ $(document).ready(function () {
 			//document.write('<br/>');
 			// 'document.write('<br/> +
 				
-			$(function()).appendTo("#showExcel");	
+			
         });
-	
+		$(function()).appendTo("#showExcel");	
     });
 
 
