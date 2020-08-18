@@ -39,7 +39,7 @@ $(document).ready(function () {
 			
 			function imagefun() { 
 				var x = document.createElement('img'); 
-				x.setAttribute("src", value.Photo);
+				x.setAttribute("img.src", value.Photo);
 				document.body.appendChild(x);
             }    
 			
