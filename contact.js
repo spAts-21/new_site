@@ -66,7 +66,7 @@ $(document).ready(function () {
 				
 			//$("function()").appendTo("#showExcel");
         });
-			$(codeBlock).appendTo("#showExcel");	
+			$("function()").appendTo("#showExcel");
     });
 
 
