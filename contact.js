@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
-		 codeBlock='';
+		 //codeBlock='';
 
 		 $.each(jsonData, function(index, value) {
 
@@ -49,7 +49,7 @@ $(document).ready(function () {
 				
 			
         });
-			$(codeBlock).appendTo("#showExcel");	
+			$("codeBlock").appendTo("#showExcel");	
 			//$("function()").appendTo("#showExcel");
     });
 
