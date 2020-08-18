@@ -33,28 +33,41 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
+	
 		codeBlock='';
-
-		 $.each(jsonData, function(index, value) {
+		 $.each(jsonData, function (index, value) {
 
 			
-			/*function imagefun() { 
+			function imagefun() { 
 				var x = document.createElement('img'); 
-				x.setAttribute("img.src", value.Photo);
+				x.setAttribute("src", value.Photo);
 				document.body.appendChild(x);
-            }*/
+            }    
 			
 			codeBlock += '<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>';
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
 				
+			//$(codeBlock).appendTo("#showExcel");	
 			
-        });
-			$("codeBlock").appendTo("#showExcel");	
+			//'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
+			//')'
+			//imagefun() +
+			//document.write('<br/>');
+			//value["Post"];
+			//value["Department"];
+			//document.write('<br/>');
+			//value["Email id"];
+			//document.write('<br/>');
+			//'<a href = value["Fb link"]>fb</a>';
+			//document.write('<br/>');
+			//'<a href = value["Linkedin link"]>' + fb + '</a>' 
+			//document.write('<br/>');
+			//document.write('<br/>');
+			// 'document.write('<br/> +
+				
 			//$("function()").appendTo("#showExcel");
+        });
+			$("function()").appendTo("#showExcel");
     });
-
-
-}); // end: Ajax success API call
-
      // end: of Ajax call
 
