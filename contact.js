@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
-
+		codeBlock='';
 		 $.each(jsonData, function (index, value) {
 
 			
@@ -43,8 +43,12 @@ $(document).ready(function () {
 				document.body.appendChild(x);
             }    
 			
-
-			'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
+			codeBlock += '<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
+				
+			$(codeBlock).appendTo("#showExcel");	
+			
+			//'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
 			//')'
 			//imagefun() +
 			//document.write('<br/>');
