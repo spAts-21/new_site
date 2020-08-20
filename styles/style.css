@@ -63,6 +63,9 @@
   min-height: 800px;
   background: center/cover no-repeat;
 }
+.row{
+  width: 102%;
+}
 .col{
   flex:3;
   -ms-flex:3;
