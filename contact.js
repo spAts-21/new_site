@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         console.log(jsonData);
 		
-		
+		                                                                                                                                             
 		 $.each(jsonData, function (index, value) {
 
 			
@@ -62,11 +62,12 @@ $(document).ready(function () {
 			//'<a href = value["Linkedin link"]>' + fb + '</a>' 
 			//document.write('<br/>');
 			//document.write('<br/>');
-			// 'document.write('<br/> +
+            // 'document.write('<br/> +
+            $("function").appendTo("#showExcel");
 				
 			
         });
-			$("function()").appendTo("#showExcel");
+			
     });
 
 
