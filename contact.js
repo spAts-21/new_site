@@ -31,7 +31,7 @@ $(document).ready(function () {
         var jsonData = XLSX.utils.sheet_to_json(worksheet, { raw: true });
         /************************ End of conversion ************************/
 
-        console.log(jsonData);
+        //console.log(jsonData);
 		
 		                                                                                                                                             
 		 $.each(jsonData, function(index, value) {
