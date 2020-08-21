@@ -16,7 +16,7 @@ $(document).ready(function () {
         if (!res.ok) throw new Error("fetch failed");
         return res.arrayBuffer();
     })
-    .then(function (ab) {
+    .then(function whole(ab) {
         /* parse the data when it is received */
         var data = new Uint8Array(ab);
         var workbook = XLSX.read(data, { type: "array" });
@@ -43,7 +43,7 @@ $(document).ready(function () {
 				document.body.appendChild(x);
             }    
 			
-			'<div style="border:thin solid black; background-color:white">' + value["Photo"] + value["Name"] + value["Post"] + value["Department"] + 
+			'<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>';
 				
 			
@@ -65,11 +65,11 @@ $(document).ready(function () {
             // 'document.write('<br/> +
             
 				
-			
+			$("function()").appendTo("#showExcel");
         });
 			
     });
-	$("function()").appendTo("#showExcel");
+	
 
 }); // end: Ajax success API call
 
