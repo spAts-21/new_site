@@ -34,14 +34,14 @@ $(document).ready(function () {
         console.log(jsonData);
 		
 		                                                                                                                                             
-		 $.each(jsonData, function (index, value) {
+		 $.each(jsonData, function(index, value) {
 
-			
+			/*
 			function imagefun() { 
 				var x = document.createElement('img'); 
 				x.setAttribute("src", value.Photo);
 				document.body.appendChild(x);
-            }    
+            }   */ 
 			
 			'<div style="border:thin solid black; background-color:white">' + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] + value["Linkedin link"]  + '</div>';
@@ -65,7 +65,7 @@ $(document).ready(function () {
             // 'document.write('<br/> +
             
 				
-			$(function()).appendTo("#showExcel");
+			$(function()).appendTo($("#showExcel"));
         });
 			
     });
