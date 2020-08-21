@@ -68,8 +68,8 @@ $(document).ready(function () {
 			
         });
 		
-			var fn = rep();
-			$("fn").appendTo($("#showExcel"));
+			var fun = rep()
+			$("fun").appendTo($("#showExcel"));
     });
 	
 
