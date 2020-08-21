@@ -43,8 +43,8 @@ $(document).ready(function () {
 				document.body.appendChild(x);
             }    
 			
-			'<div style="border:thin solid black; background-color:white">' + value.Photo + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
+			'<div style="border:thin solid black; background-color:white">' + value["Photo"] + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' + '<br/>';
 				
 			
 			
