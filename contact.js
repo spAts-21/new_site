@@ -67,7 +67,9 @@ $(document).ready(function () {
 				
 			
         });
-			$(function()).appendTo($("#showExcel"));
+		
+			var fn = function ();
+			$("fn").appendTo($("#showExcel"));
     });
 	
 
