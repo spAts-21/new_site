@@ -63,13 +63,13 @@ $(document).ready(function () {
 			//document.write('<br/>');
 			//document.write('<br/>');
             // 'document.write('<br/> +
-            $("function").appendTo("#showExcel");
+            
 				
 			
         });
 			
     });
-
+	$("function()").appendTo("#showExcel");
 
 }); // end: Ajax success API call
 
