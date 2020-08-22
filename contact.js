@@ -46,9 +46,22 @@ $(document).ready(function () {
 			else{
                 Id="#";
             }
+			
+			lilink = https://drive.google.com/file/d/17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt/view?usp=sharing
+			fblink = https://drive.google.com/file/d/1eUPh5wHSE7S8dIltuFiKvvP7PhpKsj2C/view?usp=sharing
+			
+			var ll = lilink.slice(32,lilink.length);
+			var fnc1Indexl = ll.indexOf(fnc1);
+			Idl=lilink.slice(32,32+fnc1Indexl);
+			
+			var fl = fblink.slice(32,fblink.length);
+			var fnc1Index2 = fl.indexOf(fnc1);
+			Idf=fblink.slice(32,32+fnc1Index2);
+			
+			
 			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'">' + '<br/>' + value["Name"] + 
-			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'">fb</a>' + '<br/>' + 
-			'<a href="' + value["linkedin link"] + '"> Li </a>' + '</div>' + '<br/>' ;
+			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + 
+			'<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>' + '<br/>' ;
 			
         });
 		
