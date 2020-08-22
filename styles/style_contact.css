@@ -25,13 +25,15 @@
 
 #person {
 	position: relative;
-	margin-left: 40px;
+	margin-left: auto;
+	margin-right: auto;
 	border: thin solid white;
 	border-radius: 5px;
 	padding: 10px;
 	float: left; 
 	width: 25%; 
 	height: 240px;
+	
 }	
 	
 .pericon {
@@ -39,8 +41,4 @@
   margin-left: auto;
   margin-right: auto;
   height: 20%;
-}
-
-.flicon {
-  display: block;
 }
