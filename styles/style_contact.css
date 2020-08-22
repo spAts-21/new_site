@@ -1,8 +1,18 @@
-html, body {
-  overflow: scroll;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+ 
+  .body
+{
+  background-image: url("./img/space2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width:100%;
+  padding:0;
+  margin:0;
   overflow-x: hidden;
-  height: fit-content;
-  background-color: dark-blue;
+}
 }
 
 ::-webkit-scrollbar {

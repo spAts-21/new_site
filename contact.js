@@ -46,9 +46,9 @@ $(document).ready(function () {
 			else{
                 Id="#";
             }
-			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img src=" https://drive.google.com/uc?id='+Id+'"; height="50%"; align="center">' + '<br/>' + value["Name"] + 
-			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + value["Fb link"] + '<a href='+value["Fb link"]+'>fb</a>' + '<br/>' + 
-			value["Linkedin link"]  + '<a href='+value["Linkedin link"]+'>Li</a>' + '</div>' + '<br/>' ;
+			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class="center"; src=" https://drive.google.com/uc?id='+Id+'"; height="50%">' + '<br/>' + value["Name"] + 
+			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href='+value["fb link"]+'>fb</a>' + '<br/>' + 
+			'<a href='+value["linkedin link"]+'>Li</a>' + '</div>' + '<br/>' ;
 
 				
 			
