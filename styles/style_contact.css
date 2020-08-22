@@ -46,13 +46,13 @@
 
 #person {
 	position: relative;
-	margin-left: 15%
+	margin-left: 15%;
 	text-align: center;
 	border: 4px solid white;
 	border-radius: 5px;
 	padding: 20px;
 	float: left; 
-	width: 25%;
+	width: 20%;
 	
 }	
 	
@@ -60,7 +60,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 1%;
+  height: 10%;
 }
 
 .tagline {
