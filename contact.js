@@ -46,30 +46,9 @@ $(document).ready(function () {
 			else{
                 Id="#";
             }
-			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class="center"; src=" https://drive.google.com/uc?id='+Id+'"; height="50%">' + '<br/>' + value["Name"] + 
-			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'">fb</a>' + '<br/>' + 
-			'<a href="' + value["linkedin link"] + '">Li</a>' + '</div>' + '<br/>' ;
-
-				
-			
-			
-			//'<div style="border:thin solid black; padding: 5px">' +  value["Name"] + value["Post"] + '</div>';
-			//')'
-			//imagefun() +
-			//document.write('<br/>');
-			//value["Post"];
-			//value["Department"];
-			//document.write('<br/>');
-			//value["Email id"];
-			//document.write('<br/>');
-			//'<a href = value["Fb link"]>fb</a>';
-			//document.write('<br/>');
-			//'<a href = value["Linkedin link"]>' + fb + '</a>' 
-			//document.write('<br/>');
-			//document.write('<br/>');
-            // 'document.write('<br/> +
-            
-				
+			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class="center"; src=" https://drive.google.com/uc?id='+Id+'">' + '<br/>' + value["Name"] + 
+			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'">' + fb + '</a>' + '<br/>' + 
+			'<a href="' + value["linkedin link"] + '">' + Li + '</a>' + '</div>' + '<br/>' ;
 			
         });
 		
