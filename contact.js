@@ -47,8 +47,8 @@ $(document).ready(function () {
                 Id="#";
             }
 			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class=pericon"; src=" https://drive.google.com/uc?id='+Id+'">' + '<br/>' + value["Name"] + 
-			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'">' + fb + '</a>' + '<br/>' + 
-			'<a href="' + value["linkedin link"] + '">' + Li + '</a>' + '</div>' + '<br/>' ;
+			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'">fb</a>' + '<br/>' + 
+			'<a href="' + value["linkedin link"] + '"> Li </a>' + '</div>' + '<br/>' ;
 			
         });
 		
