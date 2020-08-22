@@ -46,7 +46,7 @@ $(document).ready(function () {
 			else{
                 Id="#";
             }
-			document.getElementById("showExcel").innerHTML+='<div style="border:thin solid black; background-color:white">' + '<img src=" https://drive.google.com/uc?id='+Id+'">' + value["Name"] + value["Post"] + value["Department"] + 
+			document.getElementById("showExcel").innerHTML+='<div style="border:thin solid black; background-color:white">' + '<img src=" https://drive.google.com/uc?id='+Id+'">' + '<br/>' + value["Name"] + value["Post"] + value["Department"] + 
 			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
 
 				
