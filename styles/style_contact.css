@@ -29,12 +29,16 @@
 }
 
 .vl {
-  border-left: 4px solid white;
+  border-left: 2px solid white;
   size: cover;
   position: absolute;
   left: 15%;
   margin-left: 0px;
   top: 100;
+}
+
+hr.new1 {
+  border: 1px solid white;
 }
 
 ::-webkit-scrollbar {
@@ -50,8 +54,8 @@
 	border: 4px solid white;
 	border-radius: 5px;
 	padding: 20px;
-	float: left; 
-	width: 27%;
+	
+	width: 15%;
 	
 }	
 	
@@ -59,7 +63,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 1%;
+  height: 70px;
 }
 
 .tagline {
