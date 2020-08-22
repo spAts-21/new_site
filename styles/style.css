@@ -126,6 +126,7 @@
   display: none;
   position: relative;
   min-height: 100vh;
+  transition: ease 2s;
 }
 #footer{
   position: absolute;
@@ -183,6 +184,9 @@
 
 .card-content:hover:after {
   height: 6px;
+}
+.description{
+  padding: 0 5% 0 5%;
 }
 .footer-content
 {
