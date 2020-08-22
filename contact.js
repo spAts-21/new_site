@@ -34,17 +34,21 @@ $(document).ready(function () {
         console.log(jsonData);
 		
 		                                                                                                                                             
-		 $.each(jsonData, function rep(index, value) {
 
-			/*
-			function imagefun() { 
-				var x = document.createElement('img'); 
-				x.setAttribute("src", value.Photo);
-				document.body.appendChild(x);
-            }   */ 
-			
-			'<div style="border:thin solid black; background-color:white">' + value["Name"] + value["Post"] + value["Department"] + 
-			value["Email id"] + value["Fb link"] + value["Linkedin link"]  + '</div>';
+		 $.each(jsonData, function (index, value) {
+            if(value.Photo!=undefined)
+            {
+            var fnc1 = "/";
+            var link=value.Photo.slice(32,value.Photo.length);
+            var fnc1Index = link.indexOf(fnc1);
+            Id=value.Photo.slice(32,32+fnc1Index);
+            }
+			else{
+                Id="#";
+            }
+			document.getElementById("showExcel").innerHTML+='<div style="border:thin solid black; background-color:white">' + '<img src=" https://drive.google.com/uc?id='+Id+'">' + value["Name"] + value["Post"] + value["Department"] + 
+			value["Email id"] + value["Fb link"] +  value["Linkedin link"]  + '</div>' ;
+
 				
 			
 			
@@ -68,8 +72,8 @@ $(document).ready(function () {
 			
         });
 		
-			var fun = rep()
-			$("fun").appendTo($("#showExcel"));
+			//var fun = rep()
+			//$("fun").appendTo($("#showExcel"));
     });
 	
 
