@@ -55,16 +55,16 @@ hr.new1 {
 	border-radius: 5px;
 	padding: 20px;
 	float: left;
-	width: 25%;
+	width: 300px;
 	
 }	
 	
 .pericon {
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
+  height: 250px;
 }
 
 .tagline {
-	position: relative;
+	position: absolute;
 }
