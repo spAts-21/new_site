@@ -48,7 +48,7 @@ $(document).ready(function () {
             }
 			
 			var lilink = "https://drive.google.com/file/d/17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt/view?usp=sharing";
-			var fblink = "https://drive.google.com/file/d/1eUPh5wHSE7S8dIltuFiKvvP7PhpKsj2C/view?usp=sharing";
+			var fblink = "https://drive.google.com/file/d/1JSZg9NKGkrDsL-RnxsE-92lSWYhOgsiW/view?usp=sharing";
 			
 			var fnc2 = "/";
 			var ll = lilink.slice(32,lilink.length);
@@ -60,7 +60,7 @@ $(document).ready(function () {
 			Idf=fblink.slice(32,32+fnc1Index2);
 			
 			
-			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'">' + '<br/>' + value["Name"] + 
+			document.getElementById("showExcel").innerHTML+='<div id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'">' + '<br/>' + '<br/>' + '<bold>' + value["Name"] + '</bold>' +
 			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + value["Email id"] + '<br/>' + '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' +
 			'<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>' + '&nbsp' + '&nbsp' + '&nbsp' ;
 			
