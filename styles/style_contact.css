@@ -41,6 +41,14 @@
     
 }
 
+.spAtslogo {
+	display: block;
+    width:30vh;
+    height: auto;
+    margin:auto;	
+	
+}
+
 .tablecontent {
 	font-size: 22px;
 }
