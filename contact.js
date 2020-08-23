@@ -49,7 +49,7 @@ $(document).ready(function () {
 			
 			var lilink = "https://drive.google.com/file/d/17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt/view?usp=sharing";
 			var fblink = "https://drive.google.com/file/d/1JSZg9NKGkrDsL-RnxsE-92lSWYhOgsiW/view?usp=sharing";
-			var maillink = "https://drive.google.com/file/d/1TThtVvei34OIGNFDmV1QO2oaHvrkPdnu/view?usp=sharing";
+			var maillink = "https://drive.google.com/file/d/1Fiaw9AnitpINX4M2-cst2bHj5oH5m5Fh/view?usp=sharing";
 			
 			var fnc2 = "/";
 			var ll = lilink.slice(32,lilink.length);
