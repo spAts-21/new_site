@@ -17,6 +17,13 @@
   overflow-x: hidden;
 }
 
+.club img{
+    display: block;
+    width:30vh;
+    height: auto;
+    margin:auto;
+}
+
 .tablecontent {
 	font-size: 22px;
 }
