@@ -26,7 +26,7 @@
 
 .spAtslogo {
 	display: block;
-    width:50vh;
+    width:20vh;
     height: auto;
     margin:auto;	
 	
@@ -71,6 +71,14 @@
   /* make scrollbar transparent */
 }
 
+.container-fluid{
+  padding-right: 0!important;
+  padding-left: 0 !important;
+  
+}
+.container-fluid .row{
+  padding-left: 0;
+}
 
 #person {
 	position: relative;
@@ -92,8 +100,33 @@
   height: 150px;
 }
 
-#footer {
-   left: 0;
-   bottom: 0;
-   width: 100%;
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+}
+
+.footer-content
+{
+  margin: 0 auto;
+}
+.cp{
+  color: white;
+}
+.footer-content ul li{
+  display: inline;
+  padding: 10px 10px 10px 10px;
+}
+.fa{
+ color: white;
+}
+.sticky-bottom
+{
+  background-color: black!important;
+}
+.row 
+{
+   padding-left:50px;
 }
