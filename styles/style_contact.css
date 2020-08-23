@@ -74,7 +74,7 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 	float: left;
-	width: 300px;
+	width: 700px;
 	height: 550px;
 }	
 	
@@ -82,4 +82,12 @@
   margin-left: auto;
   margin-right: auto;
   height: 150px;
+}
+
+#footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
 }
