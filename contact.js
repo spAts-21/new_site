@@ -66,7 +66,7 @@ $(document).ready(function () {
 			
 			
 			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'">' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' +
-			'<h5>' + value["Post"] + '</h5>' + '<h5>' + value["Department"] + '</h5>' + '<br/>' + '<a href="' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
+			'<h6>' + value["Post"] + '</h6>' + '<h6>' + value["Department"] + '</h6>' + '<a href="' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
 			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>' + '&nbsp' + '&nbsp' + '&nbsp' ;
 			
         });
