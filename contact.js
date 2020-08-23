@@ -49,7 +49,7 @@ $(document).ready(function () {
 			
 			var lilink = "https://drive.google.com/file/d/17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt/view?usp=sharing";
 			var fblink = "https://drive.google.com/file/d/1JSZg9NKGkrDsL-RnxsE-92lSWYhOgsiW/view?usp=sharing";
-			var maillink = "https://drive.google.com/file/d/1qz7m2kgNCYPbZKMt4-mw-uVrSR9BdQj0/view?usp=sharing";
+			var maillink = "https://drive.google.com/file/d/1TThtVvei34OIGNFDmV1QO2oaHvrkPdnu/view?usp=sharing";
 			
 			var fnc2 = "/";
 			var ll = lilink.slice(32,lilink.length);
@@ -65,10 +65,9 @@ $(document).ready(function () {
 			Idm=maillink.slice(32,32+fnc1Index3);
 			
 			
-			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'">' + '<br/>' + '<br/>' + '<bold>' + value["Name"] + '</bold>' +
-			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' +
-			'<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '&nbsp' + '<a href="' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' 
-			+ '</div>' + '&nbsp' + '&nbsp' + '&nbsp' ;
+			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'">' + '<br/>' + '<br/>' + '<h3>' + value["Name"] + '</h3>' +
+			'<br/>' + value["Post"] + '<br/>' + value["Department"] + '<br/>' + '<br/>' + '<a href="' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
+			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>' + '&nbsp' + '&nbsp' + '&nbsp' ;
 			
         });
 		

@@ -42,13 +42,13 @@ links.a: hover {
   width: 15%;
   padding: 30px;
   overflow: hidden;
-   border-right: 2px solid white;
 }
 
 .column2 {
   float: left;
   width: 85%;
   padding: 50px;
+  border-left: 2px solid white;
 }
 
 .sticky {
