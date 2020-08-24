@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+ body
+{
+  background-image: url("./img/space2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF; 
+  height: 100%;
+  min-height: 100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+links.a: link {
+	color: white;	
+}
+
+links.a: hover {
+	color: black;
+	background-color: white;
+}
+
+.tablecontent {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	font-size: 20px;
+}
+
+.column1 {
+  position: -webkit-sticky; 
+  position: sticky; 
+  top: 0;
+  float: left;
+  width: 15%;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.column2 {
+  float: left;
+  width: 85%;
+  padding: 50px;
+  border-left: 2px solid white;
+}
+
+.sticky {
+	position: -webkit-sticky; 
+	position: sticky; 
+	top: 0;
+}
+
+.vl {
+  border-left: 2px solid white;
+  position: absolute;
+  left: 15%;
+  margin-left: 0px;
+  top: 100;
+}
+
+.new1 {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.container-fluid{
+  padding-right: 0!important;
+  padding-left: 0 !important;
+  
+}
+.container-fluid .row{
+  padding-left: 0;
+}
+
+#person {
+	position: relative;
+	text-align: center;
+	border: 3px solid white;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	float: left;
+	height: 350px;
+}	
+	
+.pericon {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: 1px solid transparent; 
+  border-radius: 50%;
+}
+
+#footer{
+  position: relative;
+  bottom: -4000;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+}
