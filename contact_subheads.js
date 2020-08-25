@@ -3,7 +3,7 @@
 // difine global variables that will be use throughout the code                                                        *
 // *********************************************************************************************************************
 
-var excel_file_API = './Heads_Contacts.xlsx';
+var excel_file_API = './Sub-Heads_Contacts.xlsx';
 
 // Do some stuff when page hmtl page is launched
 $(document).ready(function () {
@@ -11,12 +11,12 @@ $(document).ready(function () {
     $("#headerTitle");
 
     // read Excel file and convert to json format using fetch
-    fetch('./Heads_Contacts.xlsx').then(function (res) {
+    fetch('./Sub-Heads_Contacts.xlsx').then(function (res) {
         /* get the data as a Blob */
         if (!res.ok) throw new Error("fetch failed");
         return res.arrayBuffer();
     })
-    .then(function full(ab) {
+    .then(function whole(ab) {
         /* parse the data when it is received */
         var data = new Uint8Array(ab);
         var workbook = XLSX.read(data, { type: "array" });
@@ -24,16 +24,16 @@ $(document).ready(function () {
         /* *****************************************************************
         * DO SOMETHING WITH workbook: Converting Excel value to Json       *
         ********************************************************************/
-        var first_sheet_name = workbook.SheetNames[1];
+        var zeroth_sheet_name = workbook.SheetNames[0];
         /* Get worksheet */
-        var worksheetone = workbook.Sheets[first_sheet_name];
+        var worksheet = workbook.Sheets[zeroth_sheet_name];
 
-        var _jsonData = XLSX.utils.sheet_to_json(worksheetone, { raw: true });
+        var jsonData = XLSX.utils.sheet_to_json(worksheet, { raw: true });
         /************************ End of conversion ************************/
 
                                                                                                                             
 
-		 $.each(_jsonData, function (index, value) {
+		 $.each(jsonData, function (index, value) {
             if(value.Photo!=undefined)
             {
             var fnc1 = "/";
@@ -63,8 +63,8 @@ $(document).ready(function () {
 			Idm=maillink.slice(32,32+fnc1Index3);
 			
 			
-			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="persicon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover"; >' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' +
-			'<h6>' + value["Department"] + '</h6>' + '<h6>' + value["Post"] + '</h6>' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
+			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover";>' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' +
+			'<h6>' + value["Department"] + '</h6>' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
 			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>';
 			
         });
