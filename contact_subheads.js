@@ -3,7 +3,7 @@
 // difine global variables that will be use throughout the code                                                        *
 // *********************************************************************************************************************
 
-var excel_file_API = './spAts members details.xlsx';
+var excel_file_API = './Sub-Heads_Contacts.xlsx';
 
 // Do some stuff when page hmtl page is launched
 $(document).ready(function () {
@@ -24,11 +24,11 @@ $(document).ready(function () {
         /* *****************************************************************
         * DO SOMETHING WITH workbook: Converting Excel value to Json       *
         ********************************************************************/
-        var second_sheet_name = workbook.SheetNames[2];
+        var second_sheet_name = workbook.SheetNames[0];
         /* Get worksheet */
-        var worksheettwo = workbook.Sheets[second_sheet_name];
+        var worksheet = workbook.Sheets[zeroth_sheet_name];
 
-        var jsonData = XLSX.utils.sheet_to_json(worksheettwo, { raw: true });
+        var jsonData = XLSX.utils.sheet_to_json(worksheet, { raw: true });
         /************************ End of conversion ************************/
 
                                                                                                                             

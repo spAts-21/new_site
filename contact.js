@@ -3,7 +3,7 @@
 // difine global variables that will be use throughout the code                                                        *
 // *********************************************************************************************************************
 
-var excel_file_API = './spAts members details.xlsx';
+var excel_file_API = './Heads_Contacts.xlsx';
 
 // Do some stuff when page hmtl page is launched
 $(document).ready(function () {
