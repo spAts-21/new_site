@@ -22,10 +22,21 @@ a.links:link {
 	color: white;	
 }
 
+a.links:visited {
+  color: white;
+}
+
 a.links:hover {
 	color: black;
 	background-color: white;
+	
 }
+
+.links {
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
 
 .tablecontent {
 	position: -webkit-sticky;
