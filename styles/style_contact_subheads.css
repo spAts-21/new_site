@@ -34,7 +34,8 @@ a.links:hover {
 
 .links {
 	border: 1px solid transparent;
-	border-radius: 5px;
+	border-radius: 8px;
+	padding: 3px;
 }
 
 
