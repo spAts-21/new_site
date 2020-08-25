@@ -112,6 +112,7 @@ a.links:hover {
 	padding-right: 30px;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	width: 30%;
 	float: left;
     outline: 3px solid white;
     outline-offset: -20px;
@@ -121,8 +122,8 @@ a.links:hover {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 40%;
+  height: 40%;
   border: 1px solid transparent; 
   border-radius: 50%;
 }
