@@ -107,18 +107,14 @@ a.links:hover {
 }	
 	
 .sky-gazing-wrapper{
-    background-color:rgba(0, 0, 0, 0.479);
     color: white;
     padding: 0 1% 0 1%;
     font-family: 'Rubik', sans-serif;
     padding-bottom:5rem ;
-
-    
+	text-align: center;
+    font-size:45px; 
 }
-.sky-gazing-wrapper h1{
-    text-align: center;
-    font-size:45px;
-}	
+
 	
 .pericon {
   margin-left: auto;
