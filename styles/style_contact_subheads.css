@@ -18,11 +18,11 @@
   font-family: 'Rubik', sans-serif;
 }
 
-links.a: link {
+a.links:link {
 	color: white;	
 }
 
-links.a: hover {
+a.links:hover {
 	color: black;
 	background-color: white;
 }
@@ -47,7 +47,7 @@ links.a: hover {
 .column2 {
   float: left;
   width: 85%;
-  padding: 50px;
+  padding: 45px;
   border-left: 2px solid white;
 }
 
