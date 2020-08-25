@@ -31,9 +31,7 @@ $(document).ready(function () {
         var jsonData = XLSX.utils.sheet_to_json(worksheettwo, { raw: true });
         /************************ End of conversion ************************/
 
-        console.log(jsonData);
-		
-		                                                                                                                                             
+                                                                                                                            
 
 		 $.each(jsonData, function (index, value) {
             if(value.Photo!=undefined)
@@ -67,7 +65,7 @@ $(document).ready(function () {
 			
 			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover";>' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' +
 			'<h6>' + value["Department"] + '</h6>' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
-			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>' + '&nbsp' + '&nbsp' + '&nbsp' ;
+			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>';
 			
         });
 		
