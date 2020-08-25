@@ -90,13 +90,14 @@ a.links:hover {
 }
 
 #person {
-	background-color: rgba(0, 0, 0, 0.851)!important;
+	
+	background-image: radial-gradient(black 5%,  transparent 95%);
 	position: relative;
 	text-align: center;
 	padding-left: 30px;
 	padding-right: 30px;
-	padding-top: 60px;
-	padding-bottom: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	float: left;
     outline: 3px solid white;
     outline-offset: -20px;
