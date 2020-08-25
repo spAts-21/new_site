@@ -92,14 +92,14 @@ a.links:hover {
 }
 
 #person {
+	background-color: rgba(0, 0, 0, 0.851)!important;
 	position: relative;
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-top: 60px;
 	padding-bottom: 30px;
 	float: left;
-	height: 400px;
 	outline: 3px solid white;
     outline-offset: -20px;
 }	
