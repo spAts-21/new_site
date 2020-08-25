@@ -18,6 +18,21 @@
   font-family: 'Rubik', sans-serif;
 }
 
+
+.sky-gazing-wrapper{
+    background-color:rgba(0, 0, 0, 0.479);
+    color: white;
+    padding: 0 1% 0 1%;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom:5rem ;    
+}
+
+.sky-gazing-wrapper h1{
+    text-align: center;
+    font-size:45px;
+}
+
+
 a.links:link {
 	color: white;	
 }
@@ -90,8 +105,7 @@ a.links:hover {
 }
 
 #person {
-	
-	background-image: radial-gradient(black 5%,  transparent 95%);
+	background-image: radial-gradient(black 15%,  transparent 85%);
 	position: relative;
 	text-align: center;
 	padding-left: 30px;
