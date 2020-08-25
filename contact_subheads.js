@@ -11,7 +11,7 @@ $(document).ready(function () {
     $("#headerTitle");
 
     // read Excel file and convert to json format using fetch
-    fetch('./spAts members details.xlsx').then(function (res) {
+    fetch('./Sub-Heads_Contacts.xlsx').then(function (res) {
         /* get the data as a Blob */
         if (!res.ok) throw new Error("fetch failed");
         return res.arrayBuffer();
