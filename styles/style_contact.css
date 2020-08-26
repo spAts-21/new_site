@@ -15,29 +15,62 @@
 	  margin:0;
 	  overflow-x: hidden;
 	  font-family: 'Rubik', sans-serif;
-	  font-size: 20px;
+	  font-size: 20px
+	}
+	  
+	.tablecontent {
+		
+		font-size: 1em;
+	}
+
+	.column1 {
+	  
+	  padding: 1em;
+	 
+	}
+	
+	.persicon {
+	  height: 8em;
+	  width: 8em; 
 	}
 }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
 
-  body
-{
-  background-image: url("./img/space2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #FFFFFF; 
-  height: 100%;
-  min-height: 100%;
-  width:100%;
-  padding:0;
-  margin:0;
-  overflow-x: hidden;
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-}
-}
+	  body
+	{
+	  background-image: url("./img/space2.png");
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  color: #FFFFFF; 
+	  height: 100%;
+	  min-height: 100%;
+	  width:100%;
+	  padding:0;
+	  margin:0;
+	  overflow-x: hidden;
+	  font-family: 'Rubik', sans-serif;
+	  font-size: 12px;
+	}
+
+	.tablecontent {
+		
+		font-size: 0.6em;
+	}
+
+	.column1 {
+	  
+	  padding: 0.5em;
+	  
+	}
+
+	.persicon {
+	  height: 6em;
+	  width: 6em;
+	}
+
+	}
 
 .sky-gazing-wrapper{
     color: white;
@@ -72,7 +105,7 @@ a.links:hover {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	font-size: 1em;
+	
 }
 
 .column1 {
@@ -81,7 +114,7 @@ a.links:hover {
   top: 0;
   float: left;
   width: 15%;
-  padding: 1em;
+ 
   overflow: hidden;
 }
 
@@ -147,8 +180,6 @@ a.links:hover {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  height: 8em;
-  width: 8em; 
   border: .05em solid transparent; 
   border-radius: 50%;
 }
