@@ -102,10 +102,10 @@ a.links:hover {
 	background-color: rgba(0,0,0,0.851) !important;
 	position: relative;
 	text-align: center;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-left: 30em;
+	padding-right: 30em;
+	padding-top: 50em;
+	padding-bottom: 50em;
 	height: 40%;
 	width: 30%;
 	float: left;
@@ -118,7 +118,7 @@ a.links:hover {
   object-fit: cover;
   line-height: 150px;
   height: 1em;
-  width: 1em; 
+  width: 150px; 
   border: 1px solid transparent; 
   border-radius: 50%;
 }
