@@ -5,6 +5,16 @@
 
 var excel_file_API = './Heads_Contacts.xlsx';
 
+jQuery(document).ready(function(jQuery) {
+    
+    jQuery('#content').css('display', 'block');
+});
+jQuery('ul.navbar-nav li.dropdown').hover(function() {
+    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+  }, function() {
+    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+  });
+
 // Do some stuff when page hmtl page is launched
 $(document).ready(function () {
 
