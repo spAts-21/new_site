@@ -110,18 +110,21 @@ a.links:hover {
     outline: .15em solid white;
     }
 	
-.member-card {
+.memcard {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: stretch;
 	align-content: space-around;
+}	
+	
+.member-card {
 	text-align: center;
 	border: 0.1em solid white;
     border-radius: 1em;
     margin: 0.25em 0;
-	
 }
+
 .p-3 {
     padding: 1rem!important;
 }
