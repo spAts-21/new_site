@@ -184,6 +184,7 @@ a.links:hover {
 }
 
 .column1 {
+  float: left;
   position: -webkit-sticky; 
   position: sticky; 
   top: 0;
