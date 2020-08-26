@@ -114,7 +114,7 @@ a.links:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: stretch;
 	align-content: space-around;
 }	
