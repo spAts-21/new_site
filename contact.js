@@ -31,7 +31,7 @@ $(document).ready(function () {
         var _jsonData = XLSX.utils.sheet_to_json(worksheetone, { raw: true });
         /************************ End of conversion ************************/
 
-                                                                                                                            
+         document.getElementById("showExcel").innerHTML='<div class="col-md-4 member-card bg-dark p-3">'                                                                                                                  
 
 		 $.each(_jsonData, function (index, value) {
             if(value.Photo!=undefined)
@@ -63,12 +63,12 @@ $(document).ready(function () {
 			Idm=maillink.slice(32,32+fnc1Index3);
 			
 			
-			document.getElementById("showExcel").innerHTML+='<div class="col-md-4 member-card bg-dark p-3">' + '<img class ="persicon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover"; >' + '<h4>' + value["Name"] + '</h4>' + '<h5>' + value["Post"] + '</h5>' +
+			document.getElementById("showExcel").innerHTML+= '<img class ="persicon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover"; >' + '<h4>' + value["Name"] + '</h4>' + '<h5>' + value["Post"] + '</h5>' +
 			'<h6>' + value["Department"] + '</h6>' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
-			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>';
+			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' ;
 			
         });
-		
+		document.getElementById("showExcel").innerHTML+='</div>';
     });
 	
 
