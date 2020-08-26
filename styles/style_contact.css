@@ -259,6 +259,11 @@ a.links:hover {
   border-radius: 50%;
 }
 
+.social-strip {
+	border: 1px solid white;
+	border-radius: 0.25em;
+}
+
 #footer{
   position: relative;
   bottom: -4000;
