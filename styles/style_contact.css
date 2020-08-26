@@ -187,7 +187,7 @@ a.links:hover {
   float: left;
   position: -webkit-sticky; 
   position: sticky; 
-  top: 0;
+  top: 1em;
   width: 15%;
   overflow: hidden;
 }
@@ -260,8 +260,11 @@ a.links:hover {
 }
 
 .social-strip {
+	margin-left: 2em;
+	margin-right: 2em;
 	border: 1px solid white;
 	border-radius: 0.25em;
+	
 }
 
 #footer{
