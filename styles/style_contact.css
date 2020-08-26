@@ -14,6 +14,7 @@
   margin:0;
   overflow-x: hidden;
   font-family: 'Rubik', sans-serif;
+  font-size: 20px;
 }
 
 
@@ -23,7 +24,7 @@
     font-family: 'Rubik', sans-serif;
     padding-bottom:5rem ;   
 	text-align: center;
-    font-size:45px;
+    font-size:2.25em;
 }
 
 
@@ -41,16 +42,16 @@ a.links:hover {
 }
 
 .links {
-	border: 1px solid transparent;
-	border-radius: 8px;
-	padding: 5px;
+	border: .05em solid transparent;
+	border-radius: .4em;
+	padding: .25px;
 }
 
 .tablecontent {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 .column1 {
@@ -59,15 +60,15 @@ a.links:hover {
   top: 0;
   float: left;
   width: 15%;
-  padding: 20px;
+  padding: 1em;
   overflow: hidden;
 }
 
 .column2 {
   float: left;
   width: 85%;
-  padding: 45px;
-  border-left: 2px solid white;
+  padding: 2.25em;
+  border-left: .1em solid white;
 }
 
 .sticky {
@@ -77,16 +78,16 @@ a.links:hover {
 }
 
 .vl {
-  border-left: 2px solid white;
+  border-left: .1em solid white;
   position: absolute;
   left: 15%;
-  margin-left: 0px;
+  margin-left: 0em;
   top: 100;
 }
 
 .new1 {
-  border: 1px solid white;
-  border-radius: 3px;
+  border: .05px solid white;
+  border-radius: .15em;
 }
 
 .container-fluid{
@@ -106,14 +107,16 @@ a.links:hover {
 	height: 40%;
 	width: 30%;
 	float: left;
-    outline: 3px solid white;
+    outline: .15em solid white;
     }
 	
 .member-card {
-    border-radius: 20px;
-    
-    width: 100%;
-    margin: 5px 0;
+	text-align: center;
+	border: 0.1em solid white;
+    border-radius: 1em;
+	float: left;
+    width: 30%;
+    margin: 0.25em 0;
 }
 .p-3 {
     padding: 1rem!important;
@@ -126,9 +129,9 @@ a.links:hover {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  height: 150px;
-  width: 150px; 
-  border: 1px solid transparent; 
+  height: 8em;
+  width: 8em; 
+  border: .05em solid transparent; 
   border-radius: 50%;
 }
 
