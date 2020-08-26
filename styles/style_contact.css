@@ -238,10 +238,11 @@ a.links:hover {
 	
 .member-card {
 	text-align: center;
-	padding: 1.5em;
+	padding: 3em 1.5em;
 	border: 0.2em solid white;
     border-radius: 1em;
     margin: 0.25em 0;
+	
 }
 
 .p-3 {
