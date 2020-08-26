@@ -109,12 +109,24 @@ a.links:hover {
     outline: 3px solid white;
     }
 	
+.member-card {
+    border-radius: 20px;
+    
+    width: 100%;
+    margin: 5px 0;
+}
+.p-3 {
+    padding: 1rem!important;
+}
+.bg-dark {
+    background-color: rgba(0,0,0,0.851)!important;
+}
+	
 .persicon {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  line-height: 150px;
-  height: 1em;
+  height: 150px;
   width: 150px; 
   border: 1px solid transparent; 
   border-radius: 50%;
