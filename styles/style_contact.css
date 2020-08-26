@@ -65,9 +65,8 @@ a.links:hover {
 }
 
 .column2 {
-  float: left;
   width: 85%;
-  padding: 2.25em;
+  padding: 2em;
   border-left: .1em solid white;
 }
 
