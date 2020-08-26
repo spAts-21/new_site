@@ -98,23 +98,12 @@ a.links:hover {
 .container-fluid .row{
   padding-left: 0;
 }
-
-#person {
-	background-color: rgba(0,0,0,0.851) !important;
-	position: relative;
-	text-align: center;
-	padding: 1em auto;
-	height: 40%;
-	width: 30%;
-	float: left;
-    outline: .15em solid white;
-    }
 	
 .memcard {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: stretch;
 	align-content: space-around;
 }	

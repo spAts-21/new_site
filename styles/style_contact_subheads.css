@@ -14,7 +14,19 @@
   margin:0;
   overflow-x: hidden;
   font-family: 'Rubik', sans-serif;
+  font-size: 20px;
 }
+
+
+.sky-gazing-wrapper{
+    color: white;
+    padding: 0 1% 0 1%;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom:5rem ;   
+	text-align: center;
+    font-size:2.25em;
+}
+
 
 a.links:link {
 	color: white;	
@@ -27,21 +39,19 @@ a.links:visited {
 a.links:hover {
 	color: black;
 	background-color: white;
-	
 }
 
 .links {
-	border: 1px solid transparent;
-	border-radius: 8px;
-	padding: 5px;
+	border: .05em solid transparent;
+	border-radius: .4em;
+	padding: .25px;
 }
-
 
 .tablecontent {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 .column1 {
@@ -50,15 +60,15 @@ a.links:hover {
   top: 0;
   float: left;
   width: 15%;
-  padding: 20px;
+  padding: 1em;
   overflow: hidden;
 }
 
 .column2 {
   float: left;
   width: 85%;
-  padding: 45px;
-  border-left: 2px solid white;
+  padding: 1.8em;
+  border-left: .1em solid white;
 }
 
 .sticky {
@@ -68,16 +78,16 @@ a.links:hover {
 }
 
 .vl {
-  border-left: 2px solid white;
+  border-left: .1em solid white;
   position: absolute;
   left: 15%;
-  margin-left: 0px;
+  margin-left: 0em;
   top: 100;
 }
 
 .new1 {
-  border: 1px solid white;
-  border-radius: 3px;
+  border: .05px solid white;
+  border-radius: .15em;
 }
 
 .container-fluid{
@@ -88,39 +98,37 @@ a.links:hover {
 .container-fluid .row{
   padding-left: 0;
 }
-
-#person {
-	background-color: rgba(0, 0, 0, 0.851)!important;
-	position: relative;
-	text-align: center;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	height: 40%;
-	width: 30%;
-	float: left;
-	outline: 3px solid white;
-    outline-offset: -20px;
+	
+.memcard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-around;
 }	
 	
-.sky-gazing-wrapper{
-    color: white;
-    padding: 0 1% 0 1%;
-    font-family: 'Rubik', sans-serif;
-    padding-bottom:5rem ;
+.member-card {
 	text-align: center;
-    font-size:45px; 
+	border: 0.1em solid white;
+    border-radius: 1em;
+    margin: 0.25em 0;
 }
 
+.p-3 {
+    padding: 1rem!important;
+}
+.bg-dark {
+    background-color: rgba(0,0,0,0.851)!important;
+}
 	
-.pericon {
+.persicon {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  width: 150px;
-  height: 150px;
-  border: 1px solid transparent; 
+  height: 8em;
+  width: 8em; 
+  border: .05em solid transparent; 
   border-radius: 50%;
 }
 
