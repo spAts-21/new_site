@@ -221,7 +221,7 @@ a.links:hover {
   position: -webkit-sticky; 
   position: sticky; 
   top: 0;
-
+  width: 15%;
   overflow: hidden;
 }
 
@@ -229,6 +229,7 @@ a.links:hover {
   float: left;
   padding: 1.8em;
   border-left: .1em solid white;
+  width: 85%;
 }
 
 .sticky {
