@@ -156,6 +156,11 @@
     font-size:2.25em;
 }
 
+.navbar{
+  background-color: rgba(0, 0, 0, 0.851)!important;
+  width: 100%;
+  white-space: nowrap;
+}
 
 a.links:link {
 	color: white;	
@@ -270,10 +275,3 @@ a.links:hover {
 	padding-top: 0.25em;
 }
 
-#footer{
-  position: relative;
-  bottom: -4000;
-  width: 100%;
-  height: 5rem;
-  background-color: black;
-}
