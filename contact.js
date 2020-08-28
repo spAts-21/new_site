@@ -28,20 +28,20 @@ $(document).ready(function () {
         /* Get worksheet */
         var worksheetone = workbook.Sheets[first_sheet_name];
 
-        var _jsonData = XLSX.utils.sheet_to_json(worksheetone, { raw: true });
+        var jsondata = XLSX.utils.sheet_to_json(worksheetone, { raw: true });
         /************************ End of conversion ************************/
 
                                                                                                                             
 
-		 $.each(_jsonData, function (index, value) {
+		 $.each(jsondata, function (index, value) {
             if(value.Photo!=undefined)
-            {
-            var fnc1 = "/";
-            var link=value.Photo.slice(32,value.Photo.length);
-            var fnc1Index = link.indexOf(fnc1);
-            Id=value.Photo.slice(32,32+fnc1Index);
-            }
-			else{
+			{
+				var fnc1 = "/";
+				var link=value.Photo.slice(32,value.Photo.length);
+				var fnc1Index = link.indexOf(fnc1);
+				Id=value.Photo.slice(32,32+fnc1Index);
+			}
+			else {
                 Id="#";
             }
 			
