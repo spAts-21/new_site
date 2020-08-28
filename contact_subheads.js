@@ -6,9 +6,9 @@
 var excel_file_API = './Sub-Heads_Contacts.xlsx';
 
 // Do some stuff when page hmtl page is launched
-jQuery(document).ready(function () {
+$(document).ready(function () {
 
-    jQuery("#headerTitle");
+    $("#headerTitle");
 
     // read Excel file and convert to json format using fetch
     fetch('./Sub-Heads_Contacts.xlsx').then(function (res) {
@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
 
                                                                                                                             
 
-		 jQuery.each(jsonData, function (index, value) {
+		 $.each(jsonData, function (index, value) {
             if(value.Photo!=undefined)
             {
             var fnc1 = "/";
