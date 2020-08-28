@@ -6,7 +6,8 @@
 var excel_file_API = './Heads_Contacts.xlsx';
 
 // Do some stuff when page hmtl page is launched
-$(document).ready(function () {
+
+jQuery(document).ready(function($){
 
     $("#headerTitle");
 
