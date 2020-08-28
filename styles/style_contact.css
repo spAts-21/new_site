@@ -171,6 +171,7 @@ a.links:visited {
 }
 
 a.links:hover {
+	text-decoration: none;
 	color: black;
 	background-color: white;
 }
@@ -178,7 +179,7 @@ a.links:hover {
 .links {
 	border: .05em solid transparent;
 	border-radius: .4em;
-	padding: .25px;
+	padding: .25em;
 }
 
 .tablecontent {
