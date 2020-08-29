@@ -284,5 +284,6 @@ a.links:hover {
 
 .footer-content ul li{
   display: inline;
+  margin: 0 auto;
   padding: 10px 10px 10px 10px;
 }
