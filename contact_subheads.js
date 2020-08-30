@@ -6,7 +6,8 @@
 var excel_file_API = './Sub-Heads_Contacts.xlsx';
 
 // Do some stuff when page hmtl page is launched
-$(document).ready(function () {
+$(document).ready(function(){
+
 
     $("#headerTitle");
 
@@ -63,9 +64,9 @@ $(document).ready(function () {
 			Idm=maillink.slice(32,32+fnc1Index3);
 			
 			
-			document.getElementById("showExcel").innerHTML+='<div class="col-lg-4 col-md-5 pl-4 pr-4 m-0" id="person">' + '<img class ="pericon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover";>' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' +
-			'<h6>' + value["Department"] + '</h6>' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp'
-			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>';
+			document.getElementById("showExcel").innerHTML+='<div class="col-md-4 member-card bg-dark p-3">' + '<img class ="persicon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover"; >' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' +
+			'<h5>' + value["Department"] + '</h5>' + '<div class="social-strip">' +  '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="20px"> </a>' + '&nbsp' + '&nbsp'
+			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="20px"></a>' + '&nbsp' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="20px"> </a>' + '</div>' + '</div>';
 			
         });
 		
