@@ -205,14 +205,6 @@ a.links:hover {
 	top: 0;
 }
 
-.vl {
-  border-left: .1em solid white;
-  position: absolute;
-  left: 15%;
-  margin-left: 0em;
-  top: 100;
-}
-
 .new1 {
   border: .05px solid white;
   border-radius: .15em;
@@ -245,9 +237,6 @@ a.links:hover {
 	
 }
 
-.p-3 {
-    padding: 1rem!important;
-}
 .bg-dark {
     background-color: rgba(0,0,0,0.851)!important;
 }
