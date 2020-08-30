@@ -276,6 +276,6 @@ a.links:hover {
   margin: 0 auto;
   padding: 10px 10px 10px 10px;
 }
-ul{
+ul.footr {
 	padding-inline-start: 25%!important;
 }
