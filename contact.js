@@ -65,8 +65,8 @@ $(document).ready(function(){
 			
 			
 			document.getElementById("showExcel").innerHTML+='<div class="col-md-4 member-card bg-dark p-3">' + '<img class ="persicon"; src="https://drive.google.com/uc?id='+Id+'"; object-fit="cover"; >' + '<br/>' + '<br/>' + '<h4>' + value["Name"] + '</h4>' + '<h5>' + value["Post"] + '</h5>' +
-			'<h6>' + value["Department"] + '</h6>' + '<br/>' + '<div class="social-strip">' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="1em"> </a>' + '&nbsp' + '&nbsp'
-			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="1em"></a>' + '&nbsp' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="1em"> </a>' + '</div>' + '</div>';
+			'<h6>' + value["Department"] + '</h6>' + '<br/>' + '<div class="social-strip">' + '<a href="mailto:' + value["Email id"] + '"> <img src="https://drive.google.com/uc?id='+Idm+'"; alt="mail"; height="18px"> </a>' + '&nbsp' + '&nbsp'
+			+ '<a href="'+value["fb link"]+'"><img src="https://drive.google.com/uc?id='+Idf+'"; alt="fb"; height="18px"></a>' + '&nbsp' + '&nbsp' + '<a href="' + value["linkedin link"] + '"> <img src="https://drive.google.com/uc?id='+Idl+'"; alt="linkedin"; height="18px"> </a>' + '</div>' + '</div>';
 			
         });
 		
