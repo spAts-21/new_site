@@ -15,17 +15,17 @@
 	  margin:0;
 	  overflow-x: hidden;
 	  font-family: 'Rubik', sans-serif;
-	  font-size: 20px
+	  font-size: 16px
 	}
 	  
 	.tablecontent {
 		
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	.column1 {
 	  
-	  padding: 1em;
+	  padding: 0.8em;
 	 
 	}
 	
@@ -52,7 +52,7 @@
 	  margin:0;
 	  overflow-x: hidden;
 	  font-family: 'Rubik', sans-serif;
-	  font-size: 20px;
+	  font-size: 14px;
 	}
 
 	.tablecontent {
@@ -90,7 +90,7 @@
 	  margin:0;
 	  overflow-x: hidden;
 	  font-family: 'Rubik', sans-serif;
-	  font-size: 12px;
+	  font-size: 10px;
 	}
 
 	.tablecontent {
@@ -105,8 +105,8 @@
 	}
 
 	.persicon {
-	  height: 6em;
-	  width: 6em;
+	  height: 8em;
+	  width: 8em;
 	}
 	
 }
@@ -127,7 +127,7 @@
 	  margin:0;
 	  overflow-x: hidden;
 	  font-family: 'Rubik', sans-serif;
-	  font-size: 12px;
+	  font-size: 10px;
 	}
 
 	.tablecontent {
@@ -205,14 +205,6 @@ a.links:hover {
 	top: 0;
 }
 
-.vl {
-  border-left: .1em solid white;
-  position: absolute;
-  left: 15%;
-  margin-left: 0em;
-  top: 100;
-}
-
 .new1 {
   border: .05px solid white;
   border-radius: .15em;
@@ -245,9 +237,6 @@ a.links:hover {
 	
 }
 
-.p-3 {
-    padding: 1rem!important;
-}
 .bg-dark {
     background-color: rgba(0,0,0,0.851)!important;
 }
@@ -287,6 +276,6 @@ a.links:hover {
   margin: 0 auto;
   padding: 10px 10px 10px 10px;
 }
-ul{
-	padding-inline-start: 20%!important;
+ul.footr {
+	padding-inline-start: 25%!important;
 }
