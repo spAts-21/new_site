@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 .about-wrapper{
-    background-color:rgba(0, 0, 0, 0.479);
+    background-color:rgba(0, 0, 0, 0.719)!important;
     color: white;
     padding: 0 1% 0 1%;
     font-family: 'Rubik', sans-serif;
