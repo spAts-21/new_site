@@ -199,7 +199,7 @@ DATE: <input type="date" name="date" value="<?php if (isset($_POST['date'])){ech
 
 TITLE: <input type="text" name="title" value="<?php if (isset($_POST['title'])){echo $_POST['title'];} ?>"><br><br>
 
-BLOG : <br><textarea name="blogs" rows="16" cols="24" value="<?php if (isset($_POST['blogs'])){echo $_POST['blogs'];} ?>"></textarea><br><br>
+BLOG : <br><textarea name="blogs" rows="30" cols="24" value="<?php if (isset($_POST['blogs'])){echo $_POST['blogs'];} ?>"></textarea><br><br>
 
 IMAGE : <input type="file" name="file" id="image" ><br><br>
 

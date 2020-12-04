@@ -254,7 +254,14 @@ while($col=mysqli_fetch_assoc($query_run))
 
     body{
 		background-color:black;
+    font-size:1.5rem!important;
 	}
+  .btn{
+    font-size:1.5rem!important;
+  }
+  h2{
+    font-size:3rem!important;
+  }
 	.content-wrapper{
 		background-color:rgba(0, 0, 0, 0.479);
     color: white;
@@ -298,7 +305,7 @@ while($col=mysqli_fetch_assoc($query_run))
 
 	#image{float:left;border:2px solid black; width:20%;margin:20px;}
 
-	.post-preview{padding:10px; }
+	.post-preview{overflow: hidden;padding:10px;max-height:80%; }
 
 	.btn{ background:blue;color:white;padding:0.4rem 1rem;position:absolute;right:10px;bottom:10px;
 
@@ -309,9 +316,11 @@ while($col=mysqli_fetch_assoc($query_run))
     color:white;
   }
   .preview-text{
-
+    color:white!important;
     word-break: break-all;
-
+    overflow:hidden;
+    max-height:70%;
+    text-overflow:ellipsis;
   }
 
 
@@ -322,7 +331,9 @@ while($col=mysqli_fetch_assoc($query_run))
 
 	{
 
-		.content{width:60%;height:300px;}
+		.content{width:80%;height:300px;
+    overflow:hidden;
+    text-overflow:ellipsis;}
 
 	}
 .post-preview h2 a{
@@ -330,7 +341,15 @@ while($col=mysqli_fetch_assoc($query_run))
   color:white;
 }
 	
-
+.dt{
+  position:absolute;
+  bottom:15px;
+  left:5%;
+  max-width:50%;
+}
+.navbar-brand{
+  height:auto!important;
+}
 </style>
 
 </head>
@@ -367,7 +386,7 @@ while($col=mysqli_fetch_assoc($query_run))
                     </div>
                   </li>
                 <li class="nav-item active ">
-                  <a class="nav-link" href="blog.html">BLOG</a>
+                  <a class="nav-link" href="god.php">BLOG</a>
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link" href="gov.html">MEMBERS</a>
@@ -400,17 +419,15 @@ while($col=mysqli_fetch_assoc($query_run))
 
          <div class="post-preview">
 
-		 <h2 class="title"><a href="single.php" class="link">'.$title[$i].'</a></h2>
+		 <h2 class="title">'.$title[$i].'</h2>
 
-		 <i class="far fa-user">'.$name[$i].'</i>
+		 <p>'.$name[$i].'</p>
 
 		 &nbsp;
+  
+		
 
-		 <i class="far calender">'.date("d/m/Y",strtotime($date[$i])).'</i>
-
-
-
-		 <p class="preview-text">'.$blog[$i].'</p>
+     
 
 
 
@@ -419,7 +436,7 @@ while($col=mysqli_fetch_assoc($query_run))
    
 
 		</div>
-
+    <i class="dt">'.date("F jS\, Y",strtotime($date[$i])).'</i>
    </div>
 
 <br><br>';

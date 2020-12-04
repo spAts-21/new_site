@@ -100,7 +100,14 @@ $query_run=mysqli_query($connection,$query); // connection
 	 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 	  body{
 		  background-color:black;
+      overflow-wrap:break-spaces;
 	  }
+    .row{
+      padding-left:0px!important;
+    }
+    .navbar-brand{
+  height:auto!important;
+}
 	  .head{
 		  font-size:25px;
 		  color:white;
@@ -115,6 +122,7 @@ $query_run=mysqli_query($connection,$query); // connection
 }
 .cp{
   color: white;
+  white-space:break-spaces;
 }
 .footer-content ul li{
   display: inline;
@@ -131,8 +139,26 @@ $query_run=mysqli_query($connection,$query); // connection
 {
    padding-left:50px;
 }
+.blog{
+  color:white!important;
+}
+table{
+  color:white;
+  width:50%;
+  margin:auto;
+}
+table,tr,td{
+  border:1px solid;
+}
+p img{
+  display:block;
+  margin:auto;
+  width:40%;
+  border:2.5px solid;
+  max-height:50vw;
+}
 
-		@media all and (min-width: 250px)
+@media all and (min-width: 250px)
 
 		{
 
@@ -140,7 +166,7 @@ $query_run=mysqli_query($connection,$query); // connection
 
 			.head{text-align:center; padding-top:40px;line-height: 30px;font-size: 55px;text-decoration: underline;}
 
-			.content{width:50%;position:relative;top:50px;left:25%;font-style:arial;font-size:18px;line-height: 23px;}
+			.content{width:60%;position:relative;top:50px;left:20%;font-style:arial;font-size:18px;line-height: 23px;}
 
 			#image{position: relative;left:38%;border:2px solid black;}
 
@@ -188,7 +214,7 @@ $query_run=mysqli_query($connection,$query); // connection
                     </div>
                   </li>
                 <li class="nav-item active ">
-                  <a class="nav-link" href="blog.html">BLOG</a>
+                  <a class="nav-link" href="god.php">BLOG</a>
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link" href="gov.html">MEMBERS</a>
@@ -202,17 +228,17 @@ $query_run=mysqli_query($connection,$query); // connection
             </div>
           </nav>
 
-	<h1 class="head"><?php echo $author; ?></h1><br><br>
+	<h1 class="head"><?php echo $title; ?></h1><br><br>
 
-	<img src="uploads/<?php echo $img; ?>" id="image" width="20%" height="30%" class="img-responsive img-rounded">
-
-	<br>
 
 	<div class="content">
 
-	<p class="blog"><?php echo $content; ?></p>
+  <p class="blog"><div class="row"><div class="col-sm-12"><?php echo $content; ?></p>
+  </div>
+  </div>
 
-	<footer>- <?php echo date("d/m/Y",strtotime($date)); ?></footer>
+
+	<footer>- <?php echo date("F jS\, Y",strtotime($date)); ?></footer>
 
 	
 	<nav class="navbar sticky-bottom navbar-dark bg-dark">
