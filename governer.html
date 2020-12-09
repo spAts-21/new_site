@@ -13,6 +13,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles/style_contact.css">
 			
+		
 		<style>
 			
 			body {
@@ -21,20 +22,20 @@
 			}
 			
 		</style>
-		
+
 		<!-- my script reference -->
-        
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		<script type="text/javascript" lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
 		<script src="script.js"></script>
-    <script type="text/javascript" src="contact.js"></script>
-    <script type="text/javascript" src="contact_subheads.js"></script>		
+		
     </head>
 
     <body>
 	<div id="content">
+    <div id="content" style="display: block;">
 	    <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent">
             <a class="navbar-brand d-flex w-50 mr-auto" href="#"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,8 +51,8 @@
                       ABOUT
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="abt_spats.html">SPATS</a>
-                      <a class="dropdown-item" href="abt_fqtq.html">FQTQ</a>
+                      <a class="dropdown-item" href="spats.html">SPATS</a>
+                      <a class="dropdown-item" href="fqtq.html">FQTQ</a>
                     </div>
                 </li>
                 <li class="nav-item active dropdown">
@@ -64,41 +65,43 @@
                     </div>
                   </li>
                 <li class="nav-item active ">
-                  <a class="nav-link" href="blog.html">BLOG</a>
+                  <a class="nav-link" href="blog.php">BLOG</a>
                 </li>
                 <li class="nav-item active dropdown">
-                  <a class="nav-link" href="gov.html">MEMBERS</a>
+                  <a class="nav-link" href="governer.html">MEMBERS</a>
                 </li>
                </ul>
                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                <span class="navbar-text">
-                <li class="nav-item" ><a href="comingsoon.html"><span class="fa fa-sign-in"></span> LOGIN</a></li>
+                <li class="nav-item"><a href="comingsoon.html"><span class="fa fa-sign-in"></span> LOGIN</a></li>
                </span>
                </ul>
             </div>
           </nav>
-	
-	<div class="container-fluid">	
+		  
+	<div class="container-fluid">		  
 		
 			
 			
 	<div class="column1">
 	<div class="col-lg-12 col-md-12 col-sm-0 m-0">
-		<table class="tablecontent" style="width:100%">
-      <tr class="links" >
-        <td class="tablecontent"><a class="links" href="gov.html">Governer and  &nbsp;GSecs</a></td>
-        </tr>
-		  <tr class="links" >
-			<td class="tablecontent"><a class="links" href="scom.html">S.Com</a></td>
-		  </tr>
-		  <br>
-		  <tr class="links" >
-			<td class="tablecontent"><a class="links" href="#">Members</a></td>
-		  </tr>
-		  <br>
-		</table>
+		<br><table class="tablecontent" style="width:100%">
+            <tbody><tr class="links">
+                <td class="tablecontent"><a class="links" href="governer.html">Governer and  &nbsp;GSecs</a></td>
+                </tr>
+                  <tr class="links">
+                    <td class="tablecontent"><a class="links" href="scom.html">S.Com</a></td>
+                  </tr>
+                  
+                  <tr class="links">
+                    <td class="tablecontent"><a class="links" href="members.html">Members</a></td>
+                  </tr>
+                  
+		  
+		</tbody></table>
 	</div>
 	</div>
+	
 	
 	<div>
 	<div class="column2">
@@ -106,25 +109,33 @@
             <div class="row justify-content-center">
 				<div class="col-lg-12 col-md-12 m-0">
                 <div style="width: 100hw; padding: 1rem">
-				
-					<div>
+                   
+				   <div>
 						<br>
-							<h1 class="sky-gazing-wrapper">3rd Years</h1>
+							<h1 class="sky-gazing-wrapper">
+                                Governer
+                            </h1>
 						<br>
 					</div>
-                   
+				   
 					<div id="showExcel" class="memcard">
 						
-          </div>
-          <div>
-						<br>
-							<h1 class="sky-gazing-wrapper">2nd Years</h1>
-						<br>
-					</div>
-                   
-					<div id="showExcel1" class="memcard">
-						
-					</div>
+                    <div class="col-md-4 member-card bg-dark p-3"><img class="persicon" ;="" src="https://drive.google.com/uc?id=1ZvfI59NYMRF-CZCUxBNH-OjXAUL8HG_u" object-fit="cover"><br><br><h4>Sai Harshendu</h4><h5>Governer</h5><h6>Mechanical Engineering</h6><br><div class="social-strip"><a href="mailto:harshendu.cs@gmail.com"> <img src="https://drive.google.com/uc?id=1Fiaw9AnitpINX4M2-cst2bHj5oH5m5Fh" ;="" alt="mail" height="18px"> </a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/sai.harshendu/"><img src="https://drive.google.com/uc?id=1JSZg9NKGkrDsL-RnxsE-92lSWYhOgsiW" ;="" alt="fb" height="18px"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/sai-harshendu-a46853167"> <img src="https://drive.google.com/uc?id=17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt" ;="" alt="linkedin" height="18px"> </a></div></div></div>
+                    
+				   <div>
+                    <br>
+                        <h1 class="sky-gazing-wrapper">
+                            GSecs
+                        </h1>
+                    <br>
+                </div>
+               
+                <div id="showExcel1" class="memcard">
+                    
+                <div class="col-md-4 member-card bg-dark p-3"><img class="persicon" ;="" src="https://drive.google.com/uc?id=1gyShMR0Y3PcOuY5UlqQxGJWDz6Bn3IMY" object-fit="cover"><br><br><h4>Anandhu S Kumar</h4><h5>General Secretary &amp; 
+Public Relations Head</h5><h6>Ocean Engineering and Naval Architecture</h6><br><div class="social-strip"><a href="mailto:anandhu.nssc@gmail.com"> <img src="https://drive.google.com/uc?id=1Fiaw9AnitpINX4M2-cst2bHj5oH5m5Fh" ;="" alt="mail" height="18px"> </a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/anandhus.anandhu.94/"><img src="https://drive.google.com/uc?id=1JSZg9NKGkrDsL-RnxsE-92lSWYhOgsiW" ;="" alt="fb" height="18px"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/anandhu-s-kumar-a94a8a18b/"> <img src="https://drive.google.com/uc?id=17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt" ;="" alt="linkedin" height="18px"> </a></div></div><div class="col-md-4 member-card bg-dark p-3"><img class="persicon" ;="" src="https://drive.google.com/uc?id=1NYQcB7V8i6YR9RFKC7DqbRdxR8TFgWAB" object-fit="cover"><br><br><h4>Nilesh Chaurasia </h4><h5>General Secretary &amp; 
+Sponsorship and Marketing Head</h5><h6>Chemical Engineering </h6><br><div class="social-strip"><a href="mailto:nileshchaurasia.nssc@gmail.com"> <img src="https://drive.google.com/uc?id=1Fiaw9AnitpINX4M2-cst2bHj5oH5m5Fh" ;="" alt="mail" height="18px"> </a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/nilesh.chaurasia.505"><img src="https://drive.google.com/uc?id=1JSZg9NKGkrDsL-RnxsE-92lSWYhOgsiW" ;="" alt="fb" height="18px"></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/nilesh-chaurasia-a18277152"> <img src="https://drive.google.com/uc?id=17EYQb7APxrP2MlZxIJ19lSmx_XA-vjwt" ;="" alt="linkedin" height="18px"> </a></div></div></div>
+                
 					
 				</div>
 				</div>
@@ -134,17 +145,16 @@
 	</div>
 	
 				<!-- Grid column -->
-	
+		
             <nav class="navbar sticky-bottom navbar-dark bg-dark">
               <div class="footer-content">
                 <ul class="footr justify-content-center">
-
                   <li><a href="https://www.facebook.com/spAts.iitkgp"><i class="fa fa-facebook-f"></i></a></li>
                   <li><a href=""><i class="fa fa-twitter"></i></a></li>
                   <li><a href="https://www.linkedin.com/company/spats/"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="https://www.instagram.com/spats.iitkgp/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-                <p class="cp">&copy; Space Technology Students' Society</p>
+                <p class="cp">© Space Technology Students' Society</p>
               </div>
             </nav>
         
@@ -152,6 +162,7 @@
 	
 	</div>
 	</div>
+	
 	</body>
 	
 </html>	

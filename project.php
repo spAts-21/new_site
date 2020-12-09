@@ -148,8 +148,8 @@ body{
                       ABOUT
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="abt_spats.html">SPATS</a>
-                      <a class="dropdown-item" href="abt_fqtq.html">FQTQ</a>
+                      <a class="dropdown-item" href="spats.html">SPATS</a>
+                      <a class="dropdown-item" href="fqtq.html">FQTQ</a>
                     </div>
                 </li>
                 <li class="nav-item active dropdown">
@@ -162,10 +162,10 @@ body{
                     </div>
                   </li>
                 <li class="nav-item active ">
-                  <a class="nav-link" href="blog.html">BLOG</a>
+                  <a class="nav-link" href="blog.php">BLOG</a>
                 </li>
                 <li class="nav-item active dropdown">
-                  <a class="nav-link" href="gov.html">MEMBERS</a>
+                  <a class="nav-link" href="governer.html">MEMBERS</a>
                 </li>
                </ul>
                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -199,7 +199,7 @@ DATE: <input type="date" name="date" value="<?php if (isset($_POST['date'])){ech
 
 TITLE: <input type="text" name="title" value="<?php if (isset($_POST['title'])){echo $_POST['title'];} ?>"><br><br>
 
-BLOG : <br><textarea name="blogs" rows="16" cols="24" value="<?php if (isset($_POST['blogs'])){echo $_POST['blogs'];} ?>"></textarea><br><br>
+BLOG : <br><textarea name="blogs" rows="30" cols="24" value="<?php if (isset($_POST['blogs'])){echo $_POST['blogs'];} ?>"></textarea><br><br>
 
 IMAGE : <input type="file" name="file" id="image" ><br><br>
 

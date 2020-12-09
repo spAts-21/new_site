@@ -1,43 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>The spAts Team</title>
-		
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">        
-		<link rel="stylesheet" href="styles/style.css">
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="styles/style_contact.css">
-			
-		
-		<style>
-			
-			body {
-				color: white;
-				height: 100%;
-			}
-			
-		</style>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/abt_spats.css">
 
-		<!-- my script reference -->
-       
+        <!-- JS, Popper.js, and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-		<script type="text/javascript" lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.1/xlsx.full.min.js"></script>
-		<script src="script.js"></script>
-        <script type="text/javascript" src="contact_gov.js"></script>
-        <script type="text/javascript" src="contact_gsecs.js"></script>
-		
+        <script src="script.js"></script>
+        <title>spAts | spAts</title>
     </head>
-
-    <body>
-	<div id="content">
-	    <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent">
+    <body class="body">
+      <div id="content">
+        <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent">
             <a class="navbar-brand d-flex w-50 mr-auto" href="#"><img src="img/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -52,8 +32,8 @@
                       ABOUT
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="abt_spats.html">SPATS</a>
-                      <a class="dropdown-item" href="abt_fqtq.html">FQTQ</a>
+                      <a class="dropdown-item" href="spats.html">SPATS</a>
+                      <a class="dropdown-item" href="fqtq.html">FQTQ</a>
                     </div>
                 </li>
                 <li class="nav-item active dropdown">
@@ -66,10 +46,10 @@
                     </div>
                   </li>
                 <li class="nav-item active ">
-                  <a class="nav-link" href="blog.html">BLOG</a>
+                  <a class="nav-link" href="blog.php">BLOG</a>
                 </li>
                 <li class="nav-item active dropdown">
-                  <a class="nav-link" href="gov.html">MEMBERS</a>
+                  <a class="nav-link" href="governer.html">MEMBERS</a>
                 </li>
                </ul>
                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -79,75 +59,37 @@
                </ul>
             </div>
           </nav>
-		  
-	<div class="container-fluid">		  
-		
-			
-			
-	<div class="column1">
-	<div class="col-lg-12 col-md-12 col-sm-0 m-0">
-		<table class="tablecontent" style="width:100%">
-            <tr class="links" >
-                <td class="tablecontent"><a class="links" href="gov.html">Governer and  &nbsp;GSecs</a></td>
-                </tr>
-                  <tr class="links" >
-                    <td class="tablecontent"><a class="links" href="scom.html">S.Com</a></td>
-                  </tr>
-                  <br>
-                  <tr class="links" >
-                    <td class="tablecontent"><a class="links" href="heads.html">Members</a></td>
-                  </tr>
-                  
-		  
-		</table>
-	</div>
-	</div>
-	
-	
-	<div>
-	<div class="column2">
-	
-            <div class="row justify-content-center">
-				<div class="col-lg-12 col-md-12 m-0">
-                <div style="width: 100hw; padding: 1rem">
-                   
-				   <div>
-						<br>
-							<h1 class="sky-gazing-wrapper">
-                                Governer
-                            </h1>
-						<br>
-					</div>
-				   
-					<div id="showExcel" class="memcard">
-						
+          <div class="about-wrapper">
+            <div class="about-content">
+                <br>
+                <div class="heading">
+        
+                    <h2>Whats Is Spats ? Who Are We ?</h2>
+                </div>
+                <div class="content">
+                    <div class="club">
+                        <div class="text">
+                            <p>We are the Space Technology Students’ Society (better known as SpAts), the official student body under Kalpana Chawla Space Technology Cell, which is the contact point of ISRO and IIT Kharagpur.
+                            
+                            <p>We are a group of students interested and dedicated towards space. We have taken upon ourselves to spread awareness about space and at the same time enrich our knowledge regarding the same.</p>
+                            <p>Each individual of our Society has a thirst for knowledge. Some lean towards the technical aspect of it, while some others show interest towards the theoretical side of things. Therefore, we have a special group of individuals who have given themselves a rather funky name: From Quarks to Quasars, or better known as FQTQ.
+                            </p>
+                        </div>
+                    
+                        <img src="img/logo.png" alt="">
+                        <br>
+                        
                     </div>
                     
-				   <div>
-                    <br>
-                        <h1 class="sky-gazing-wrapper">
-                            GSecs
-                        </h1>
-                    <br>
                 </div>
-               
-                <div id="showExcel1" class="memcard">
-                    
-                </div>
-                
-					
-				</div>
-				</div>
-			</div>	
-
-	</div>
-	</div>
-	
-				<!-- Grid column -->
-		
+            </div>
+        </div>
+            
+        <br>
+          <footer id="footer">
             <nav class="navbar sticky-bottom navbar-dark bg-dark">
               <div class="footer-content">
-                <ul  class="footr justify-content-center">
+                <ul>
                   <li><a href="https://www.facebook.com/spAts.iitkgp"><i class="fa fa-facebook-f"></i></a></li>
                   <li><a href=""><i class="fa fa-twitter"></i></a></li>
                   <li><a href="https://www.linkedin.com/company/spats/"><i class="fa fa-linkedin"></i></a></li>
@@ -156,11 +98,13 @@
                 <p class="cp">&copy; Space Technology Students' Society</p>
               </div>
             </nav>
-        
-		
-	
-	</div>
-	</div>
-	</body>
-	
-</html>	
+          </footer>
+          
+
+          </div>
+          
+          
+          
+      </div>
+    </body>
+</html>

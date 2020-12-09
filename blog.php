@@ -1,44 +1,86 @@
-<?php
+<?php 
 
 
-
-//stablising the connection with database
 
 include 'connect.inc.php';
 
 
 
+$query="SELECT id,author,date,title,content,image from blog order by id DESC";
 
-
-$id = $_GET["id"];
-
-// $id = mysql_real_escape_string($id_1);
-
-
-
-//fetching the data of passed id
-
-@$query="SELECT author,date,title,content,image from blog where id='$id'";
-
-$query_run=mysqli_query($connection,$query); // connection
+$query_run=mysqli_query($connection,$query);
 
 
 
-@$col=mysqli_fetch_assoc($query_run); // result of query
+// $col=mysqli_fetch_assoc($query_run);
 
 
 
-// varaibles
+$count=0;
 
- $author=$col['author'];
+while($col=mysqli_fetch_assoc($query_run))
 
- $date=$col['date'];
+{
 
- $title=$col['title'];
+ $id[$count]=$col['id'];
 
- $content=$col['content'];
+ $name[$count]=$col['author'];
 
- $img=$col['image'];
+ $date[$count]=$col['date'];
+
+ $title[$count]=$col['title'];
+
+ $blog[$count]=$col['content'];
+
+ $image[$count]=$col['image'];
+
+//  $id[$count]=$col['id'];
+
+ $count++;
+
+}
+
+
+
+// $col=mysqli_fetch_assoc($query_run);
+
+// {
+
+//   @$row0[$count]=$col['id'];
+
+// @$row1[$count]=$col['name'];
+
+//  @$row2[$count]=$col['date'];
+
+//  @$row3[$count]=$col['title'];
+
+//  @$row4[$count]=$col['blog'];
+
+//  @$row5[$count]=$col['image'];
+
+
+
+// $count++;
+
+// }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
@@ -46,25 +88,131 @@ $query_run=mysqli_query($connection,$query); // connection
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html>
 
 <head>
 
-	<title><?php echo $title; ?> </title>
+<script type="text/javascript">
+
+// 	function ajaxFunction(id) {
+
+//     var xhttp;
+
+//     if (window.XMLHttpRequest) {
+
+//       // code for modern browsers
+
+//       xhttp = new XMLHttpRequest();
+
+//     } else {
+
+//       // code for IE6, IE5
+
+//       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+//     }
+
+//     xhttp.onreadystatechange = function() {
+
+//       if (this.readyState == 4 && this.status == 200) {
+
+//         document.getElementById("demo").innerHTML = this.responseText;
+
+//       }
+
+//     };
+
+//     xhttp.open("GET", "single.php?id="+id, true);
+
+//     xhttp.send(null);
+
+//  }
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Recent posts</title>
 
 
 
@@ -79,7 +227,8 @@ $query_run=mysqli_query($connection,$query); // connection
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="styles/style.css">
@@ -96,33 +245,36 @@ $query_run=mysqli_query($connection,$query); // connection
 
 
 
-	<style type="text/css">
-	 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-	  body{
-		  background-color:black;
-      overflow-wrap:break-spaces;
-	  }
-    .row{
-      padding-left:0px!important;
-    }
-    .navbar-brand{
-  height:auto!important;
-}
-	  .head{
-		  font-size:25px;
-		  color:white;
-	  }
-	  .content{
-        color: white;
+
+
+
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+    body{
+		background-color:black;
+    font-size:1.5rem!important;
+	}
+  .btn{
+    font-size:1.5rem!important;
+  }
+  h2{
+    font-size:3rem!important;
+  }
+	.content-wrapper{
+		background-color:rgba(0, 0, 0, 0.479);
+    color: white;
+    padding: 0 1% 0 1%;
     font-family: 'Rubik', sans-serif;
-	  }
-	  .footer-content
+    padding-bottom:5rem ;
+	}
+	.footer-content
 {
   margin: 0 auto;
 }
 .cp{
   color: white;
-  white-space:break-spaces;
 }
 .footer-content ul li{
   display: inline;
@@ -139,50 +291,70 @@ $query_run=mysqli_query($connection,$query); // connection
 {
    padding-left:50px;
 }
-.blog{
-  color:white!important;
-}
-table{
+
+	@media all and (min-width: 250px)
+
+	{
+
+	.heading{
+
+		text-align:center; text-decoration: underline;
+		font-size:45px;}
+
+		.content{ border:1px solid grey;width:50%;height:230px;position: relative;margin:10px auto;}
+
+	#image{float:left;border:2px solid black; width:20%;margin:20px;}
+
+	.post-preview{overflow: hidden;padding:10px;max-height:80%; }
+
+	.btn{ background:blue;color:white;padding:0.4rem 1rem;position:absolute;right:10px;bottom:10px;
+
+  }
+  .btn:hover{
+    background-color: #0069d9;
+    text-decoration:none;
+    color:white;
+  }
+  .preview-text{
+    color:white!important;
+    word-break: break-all;
+    overflow:hidden;
+    max-height:70%;
+    text-overflow:ellipsis;
+  }
+
+
+
+	}
+
+	@media only screen and (min-width: 100px)
+
+	{
+
+		.content{width:80%;height:300px;
+    overflow:hidden;
+    text-overflow:ellipsis;}
+
+	}
+.post-preview h2 a{
+  text-decoration:none;
   color:white;
-  width:50%;
-  margin:auto;
 }
-table,tr,td{
-  border:1px solid;
+	
+.dt{
+  position:absolute;
+  bottom:15px;
+  left:5%;
+  max-width:50%;
 }
-p img{
-  display:block;
-  margin:auto;
-  width:40%;
-  border:2.5px solid;
-  max-height:50vw;
+.navbar-brand{
+  height:auto!important;
 }
-
-@media all and (min-width: 250px)
-
-		{
-
-
-
-			.head{text-align:center; padding-top:40px;line-height: 30px;font-size: 55px;text-decoration: underline;}
-
-			.content{width:60%;position:relative;top:50px;left:20%;font-style:arial;font-size:18px;line-height: 23px;}
-
-			#image{position: relative;left:38%;border:2px solid black;}
-
-		}
-
-		@media only screen and (min-width: 100px)
-
-		{
-
-			.head{line-height: 60px;}
-
-		}
-
-	</style>
+</style>
 
 </head>
+
+
 
 <body>
 <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent">
@@ -227,21 +399,71 @@ p img{
                </ul>
             </div>
           </nav>
+	<div class="content-wrapper">
 
-	<h1 class="head"><?php echo $title; ?></h1><br><br>
+	<h1 class="heading">RECENT POSTS</h1><br><br>
+
+  <?php 
+
+    for($i=0; $i<sizeof($title); $i++){
+
+      echo '<div class="content">
+
+		<img src="uploads/'.$image[$i].'"
+
+		
+
+		 height="70%" width="20%" class="img-responsive img-rounded" id="image">
+
+         
+
+         <div class="post-preview">
+
+		 <h2 class="title">'.$title[$i].'</h2>
+
+		 <p>'.$name[$i].'</p>
+
+		 &nbsp;
+  
+		
+
+     
 
 
-	<div class="content">
 
-  <p class="blog"><div class="row"><div class="col-sm-12"><?php echo $content; ?></p>
-  </div>
-  </div>
+     <a href="single.php?id='.$id[$i].'" class="btn">Read more</a>
+
+   
+
+		</div>
+    <i class="dt">'.date("F jS\, Y",strtotime($date[$i])).'</i>
+   </div>
+
+<br><br>';
+
+    }
 
 
-	<footer>- <?php echo date("F jS\, Y",strtotime($date)); ?></footer>
 
-	
-	<nav class="navbar sticky-bottom navbar-dark bg-dark">
+    mysqli_close($connection);
+
+  ?>
+
+  
+
+  <!-- <form>
+
+     <input class="btn" type = "button" onclick = "ajaxFunction('.$id[$i].')" value = "Read more"/>
+
+     </form> -->
+
+   
+
+
+
+
+</div>
+<nav class="navbar sticky-bottom navbar-dark bg-dark">
               <div class="footer-content">
                 <ul class="footr justify-content-center">
 
@@ -253,11 +475,6 @@ p img{
                 <p class="cp">&copy; Space Technology Students' Society</p>
               </div>
             </nav>
-</div>
-
-</body>
-
-</html>
-
-
+        
+</body></html>
 
