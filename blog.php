@@ -372,13 +372,8 @@ while($col=mysqli_fetch_assoc($query_run))
                       ABOUT
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-<<<<<<< HEAD:blog.php
                       <a class="dropdown-item" href="spats.html">SPATS</a>
                       <a class="dropdown-item" href="fqtq.html">FQTQ</a>
-=======
-                      <a class="dropdown-item" href="abt_spats.html">SPATS</a>
-                      <a class="dropdown-item" href="abt_fqtq.html">FQTQ</a>
->>>>>>> b79232f903ce767aa314cc763a4e03d3772ed5e5:god.php
                     </div>
                 </li>
                 <li class="nav-item active dropdown">
@@ -391,17 +386,10 @@ while($col=mysqli_fetch_assoc($query_run))
                     </div>
                   </li>
                 <li class="nav-item active ">
-<<<<<<< HEAD:blog.php
                   <a class="nav-link" href="blog.php">BLOG</a>
                 </li>
                 <li class="nav-item active dropdown">
                   <a class="nav-link" href="governer.html">MEMBERS</a>
-=======
-                  <a class="nav-link" href="god.php">BLOG</a>
-                </li>
-                <li class="nav-item active dropdown">
-                  <a class="nav-link" href="gov.html">MEMBERS</a>
->>>>>>> b79232f903ce767aa314cc763a4e03d3772ed5e5:god.php
                 </li>
                </ul>
                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
