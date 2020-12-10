@@ -256,6 +256,8 @@ while($col=mysqli_fetch_assoc($query_run))
     background-color:black;
     background-image: url("./img/space2.png");
     font-size:1.5rem!important;
+    background-repeat: no-repeat;
+    background-size:cover;
 	}
   .btn{
     font-size:1.5rem!important;
