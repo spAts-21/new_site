@@ -253,7 +253,8 @@ while($col=mysqli_fetch_assoc($query_run))
     @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
     body{
-		background-color:black;
+    background-color:black;
+    background-image: url("./img/space2.png");
     font-size:1.5rem!important;
 	}
   .btn{
