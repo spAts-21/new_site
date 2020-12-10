@@ -150,7 +150,7 @@ table{
 table,tr,td{
   border:1px solid;
 }
-p img{
+.col-sm-12 img{
   display:block;
   margin:auto;
   width:40%;
@@ -193,7 +193,7 @@ p img{
             <div class="collapse navbar-collapse w-100" id="navbarNav">
               <ul class="navbar-nav mr-auto w-100 justify-content-center">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

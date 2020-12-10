@@ -294,7 +294,9 @@ while($col=mysqli_fetch_assoc($query_run))
 {
    padding-left:50px;
 }
-
+.navbar{
+  margin-bottom:0!important;
+}
 	@media all and (min-width: 250px)
 
 	{
@@ -368,7 +370,7 @@ while($col=mysqli_fetch_assoc($query_run))
             <div class="collapse navbar-collapse w-100" id="navbarNav">
               <ul class="navbar-nav mr-auto w-100 justify-content-center">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -438,9 +440,6 @@ while($col=mysqli_fetch_assoc($query_run))
 
    
 
-		</div>
-    <i class="dt">'.date("F jS\, Y",strtotime($date[$i])).'</i>
-   </div>
 
 <br><br>';
 
