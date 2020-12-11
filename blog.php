@@ -326,9 +326,11 @@ while($col=mysqli_fetch_assoc($query_run))
     text-overflow:ellipsis;
   }
 
+.navbar{
+ margin-bottom:0!important;
+}
 
-
-	}
+	
 
 	@media only screen and (min-width: 100px)
 
@@ -438,7 +440,9 @@ while($col=mysqli_fetch_assoc($query_run))
 
    
 
-	
+		</div>
+   
+   </div>
 
 <br><br>';
 

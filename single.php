@@ -101,6 +101,9 @@ $query_run=mysqli_query($connection,$query); // connection
 	  body{
 		  background-color:black;
       overflow-wrap:break-spaces;
+      background-image: url("./img/space2.png");
+      background-repeat: no-repeat;
+    background-size:cover;
 	  }
     .row{
       padding-left:0px!important;
