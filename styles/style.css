@@ -10,10 +10,10 @@
         flex:0!important;
         flex-basis:auto!important;
         clip-path: none!important;
-        margin:none!important;
+        margin:0!important;
     }
-    .row{
-        margin:none!important;
+    #scientists{
+        margin:0!important;
     }
 }
 
