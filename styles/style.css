@@ -8,11 +8,12 @@
 @media screen and (max-width:768px){
     .col{
         flex:0!important;
-        flex-basis:0!important;
+        flex-basis:auto!important;
         clip-path: none!important;
+        margin:none!important;
     }
     .row{
-        width:100%!important;
+        margin:none!important;
     }
 }
 
