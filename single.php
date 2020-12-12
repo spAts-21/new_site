@@ -118,6 +118,7 @@ $query_run=mysqli_query($connection,$query); // connection
 	  .content{
         color: white;
     font-family: 'Rubik', sans-serif;
+    padding-bottom:100px;
 	  }
 	  .footer-content
 {
@@ -126,6 +127,7 @@ $query_run=mysqli_query($connection,$query); // connection
 .cp{
   color: white;
   white-space:break-spaces;
+  font-size:18px;
 }
 .footer-content ul li{
   display: inline;
@@ -156,11 +158,16 @@ table,tr,td{
 .col-sm-12 img{
   display:block;
   margin:auto;
-  width:40%;
+  width:60%;
   border:2.5px solid;
   max-height:50vw;
 }
-
+.content{
+  background-color: rgba(0, 0, 0, 0.479);
+}
+.navbar{
+  margin-bottom:0px!important;
+}
 @media all and (min-width: 250px)
 
 		{
@@ -169,7 +176,7 @@ table,tr,td{
 
 			.head{text-align:center; padding-top:40px;line-height: 30px;font-size: 55px;text-decoration: underline;}
 
-			.content{width:60%;position:relative;top:50px;left:20%;font-style:arial;font-size:18px;line-height: 23px;}
+			.content{text-align:center;width:80%;position:relative;top:50px;left:10%;font-style:arial;font-size:18px;line-height: 23px;}
 
 			#image{position: relative;left:38%;border:2px solid black;}
 
@@ -244,7 +251,9 @@ table,tr,td{
 	<footer>- <?php echo date("F jS\, Y",strtotime($date)); ?></footer>
 
 	
-	<nav class="navbar sticky-bottom navbar-dark bg-dark">
+
+</div>
+<nav class="navbar sticky-bottom navbar-dark bg-dark">
               <div class="footer-content">
                 <ul class="footr justify-content-center">
 
@@ -256,7 +265,6 @@ table,tr,td{
                 <p class="cp">&copy; Space Technology Students' Society</p>
               </div>
             </nav>
-</div>
 
 </body>
 

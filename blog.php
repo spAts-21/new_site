@@ -258,7 +258,10 @@ while($col=mysqli_fetch_assoc($query_run))
     font-size:1.5rem!important;
     background-repeat: no-repeat;
     background-size:cover;
-	}
+  }
+  .content{
+    background-color: rgba(0, 0, 0, 0.479);
+  }
   .btn{
     font-size:1.5rem!important;
   }
