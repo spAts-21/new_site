@@ -21,6 +21,10 @@
     .img{
         min-height: 500px!important;
     }
+    .card{
+        padding-bottom: 5%!important;
+        padding-top: 5%!important;
+    }
 }
 
 .navbar-brand img {
