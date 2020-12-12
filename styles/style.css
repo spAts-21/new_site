@@ -15,6 +15,12 @@
     #scientists{
         margin:0!important;
     }
+    .caption{
+        text-align: center!important;
+    }
+    .img{
+        min-height: 500px!important;
+    }
 }
 
 .navbar-brand img {
