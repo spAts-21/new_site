@@ -5,6 +5,16 @@
     width: 100%;
     white-space: nowrap;
 }
+@media only screen and (max-width:823px){
+    .col{
+        flex:0!important;
+        flex-basis:0!important;
+        clip-path: none!important;
+    }
+    .row{
+        width:100%!important;
+    }
+}
 
 .navbar-brand img {
     width: 200px;
