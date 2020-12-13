@@ -97,13 +97,18 @@ $query_run=mysqli_query($connection,$query); // connection
 
 
 	<style type="text/css">
-	 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+   @media screen and (max-width:768px){
+     table{
+       width:100%!important;
+     }
+   }
 	  body{
 		  background-color:black;
       overflow-wrap:break-spaces;
       background-image: url("./img/space2.png");
       background-repeat: no-repeat;
-    background-size:cover;
+    background-size:auto;
     }
     .transparent{
       background-color: rgba(0, 0, 0, 0.479);
@@ -177,7 +182,7 @@ table,tr,td{
 
 			.head{text-align:center; padding-top:40px;line-height: 30px;font-size: 55px;text-decoration: underline;}
 
-			.content{text-align:center;width:80%;position:relative;top:50px;left:10%;font-style:arial;font-size:18px;line-height: 23px;}
+			.content{text-align:left;width:80%;position:relative;top:50px;left:10%;font-style:arial;font-size:18px;line-height: 23px;}
 
 			#image{position: relative;left:38%;border:2px solid black;}
 
