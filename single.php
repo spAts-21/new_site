@@ -104,7 +104,10 @@ $query_run=mysqli_query($connection,$query); // connection
       background-image: url("./img/space2.png");
       background-repeat: no-repeat;
     background-size:cover;
-	  }
+    }
+    .transparent{
+      background-color: rgba(0, 0, 0, 0.479);
+    }
     .row{
       padding-left:0px!important;
     }
@@ -162,9 +165,7 @@ table,tr,td{
   border:2.5px solid;
   max-height:50vw;
 }
-.content{
-  background-color: rgba(0, 0, 0, 0.479);
-}
+
 .navbar{
   margin-bottom:0px!important;
 }
@@ -237,7 +238,7 @@ table,tr,td{
                </ul>
             </div>
           </nav>
-
+  <div class="transparent">
 	<h1 class="head"><?php echo $title; ?></h1><br><br>
 
 
@@ -253,6 +254,7 @@ table,tr,td{
 	
 
 </div>
+  </div>
 <nav class="navbar sticky-bottom navbar-dark bg-dark">
               <div class="footer-content">
                 <ul class="footr justify-content-center">

@@ -274,6 +274,7 @@ while($col=mysqli_fetch_assoc($query_run))
     padding: 0 1% 0 1%;
     font-family: 'Rubik', sans-serif;
     padding-bottom:5rem ;
+    min-height:70%;
 	}
 	.footer-content
 {
