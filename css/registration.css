@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: rgb(173,83,137); */
+    /* background: linear-gradient(144deg, rgba(173,83,137,1) 0%, rgba(60,16,83,1) 100%); */
+    background-image: url("../img/space5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,.75);
+}
+.header img{
+    height: auto;
+    width: 100px;
+}
+
+.header h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* font-style: italic; */
+    letter-spacing: 1px;
+    /* background-color: rgb(185, 35, 140); */
+    /* color: rgb(46, 42, 3); */
+    color: rgb(73, 166, 197);
+    display: none;
+}
+
+.header a.login{
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    line-height: 1.4;
+    /* background-color: purple; */
+    background: rgb(170,7,107);
+    background: linear-gradient(94deg, rgba(170,7,107,1) 0%, rgba(97,4,95,1) 100%);
+    box-shadow: 0px 0px 2px 0 rgba(255,255,255,0.60);
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.header a.login:hover{
+    background: rgb(65,41,90);
+    background: linear-gradient(94deg, rgba(65,41,90,1) 0%, rgba(47,7,67,1) 100%);
+}
+
+.quiz-registration{
+    height: 100%;
+    width: 100%;
+    padding: 60px 0 50px;
+}
+
+.quiz-inner{
+    position: relative;
+    /* margin: 50px auto; */
+    /* width: 35%; */
+    max-width: 530px;
+    border-radius: 10px;
+    /* background-color: rgba(255,255,255); */
+    padding: 30px 20px;
+    text-align: center;
+    margin: auto;
+    /* box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5); */
+
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.60);
+    background-color: rgba(0,0,0,0.72);
+    /* border-radius: 10px; */
+}
+.quiz-inner h1{
+    /* font-family: sans-serif; */
+    font-family: 'Langar', cursive;
+    line-height: 1.2;
+    /* color: rgb(19, 165, 170); */
+    color: rgb(157, 19, 170);
+    letter-spacing: 4px;
+    line-height: 1.2;
+    /* display: none; */
+}
+
+#title{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#title img{
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid rgba(0,0,0,0.52);
+    opacity: 0.8;
+}
+
+#title p{
+    /* color: rgb(170, 130, 19); */
+    margin-top: 10px;
+    color: rgb(204, 160, 184);
+    /* font-family: 'Langar', cursive; */
+    font-family: sans-serif;
+}
+.quiz-inner h2.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* font-style: italic; */
+    margin-bottom: 20px;
+    /* background-color: rgb(185, 35, 140); */
+    /* color: rgb(46, 42, 3); */
+    color: rgb(73, 166, 197);
+    display: none;
+}
+
+
+
+.form-group{
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.form-group label{
+    /* font-family: sans-serif; */
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.5;
+    text-indent: 5px;
+    /* color: rgb(167, 190, 197); */
+    color: rgba(147, 200, 218,0.9);
+    /* color: rgb(192, 212, 212); */
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.reg-title{
+    /* padding-bottom: 20px; */
+    font-size: 20px;
+    /* color: rgba(73, 166, 197); */
+    color: rgba(147, 200, 218,0.9);
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: -10px;
+    margin-top: 30px;
+}
+
+
+.form-group input{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    line-height: 1.4;
+    /* color: #555; */
+    /* color: lightblue; */
+
+    color: rgba(198, 218, 224,0.8);
+    /* border: 1px solid #ccc; */
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    text-rendering: auto;
+    
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: textfield;
+    outline: none;
+    cursor: text;
+
+    letter-spacing: 1px;
+
+
+    background-color: rgba(0,0,0,0.9);
+    /* outline-color: rgb(83, 153, 245);
+    outline-offset: 2px;
+    outline-width: thin; */
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    box-shadow: 0 0 5px 2px rgb(40, 59, 85);
+}
+
+.form-group select{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    line-height: 1.4;
+    /* color: #555; */
+    color: rgba(198, 218, 224,0.8);
+    /* border: 1px solid #ccc; */
+    border: 1px solid rgba(0,0,0,0.2);
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+    /* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+    text-rendering: auto;
+    
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: textfield;
+    outline: none;
+
+    letter-spacing: 1px;
+
+    background-color: rgba(0,0,0,0.9);
+}
+
+#team-notice{
+    color: rgb(255, 174, 0);
+    font-size: 17px;
+    letter-spacing: normal;
+    font-family: serif;
+}
+
+#register{
+    margin: 20px 0 10px;
+    padding: 10px 15px;
+    /* background-color: rgb(61, 119, 206); */
+    background-color: purple;
+    /* background: rgb(170,7,107); */
+    background: linear-gradient(94deg, rgba(170,7,107,1) 0%, rgba(97,4,95,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    outline: rgb(43, 94, 204);
+    text-decoration: none;
+    box-shadow: 0px 0px 1px 0 rgba(255,255,255,0.60);
+    width: auto;
+    cursor: pointer;
+}
+#register:hover{
+    background: rgb(65,41,90);
+    background: linear-gradient(94deg, rgba(65,41,90,1) 0%, rgba(47,7,67,1) 100%);
+}
+footer{
+    text-align: center;
+    background-color: rgba(0,0,0,.75);
+    padding: 10px 0;
+}
+.icons ul{
+    display: flex;
+    justify-content: center;
+}
+
+.icons li{
+    list-style: none;
+    margin: 10px 10px;
+}
+.icons li:hover a{
+    color: rgba(97,4,95,1);
+}
+
+.icons a{
+    color: rgb(207, 207, 207);
+    text-decoration: none;
+}
+.icons a i{
+    font-size: 20px;
+}
+
+footer p{
+    color: rgb(207, 207, 207);
+    /* font-family: sans-serif; */
+    margin: 0 auto 10px;
+}
+
+#login-modal{
+    background-color: rgba(0,0,0,.75);
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    display: none;
+}
+
+.login-modal{
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.60);
+    background-color: rgba(43, 41, 48, 0.92);
+    /* max-width: 600px;
+    min-width: 400px; */
+    width: 550px;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 20px 0 black; */
+    color: white;
+}
+
+.login-modal h2{
+    /* font-family: sans-serif; */
+    padding: 20px;
+    border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+    font-size: 20px;
+    font-weight: 500 !important;
+    letter-spacing: 1px;
+}
+
+.login-modal form{
+    text-align: center;
+}
+
+.login-modal .form-group{
+    padding: 0 20px;
+}
+
+.login-modal input{
+    max-width: 350px;
+    font-style: italic;
+}
+
+.login-modal button{
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    line-height: 1.4;
+    box-shadow: 0px 0px 2px 0 rgba(255,255,255,0.60);
+    
+    /* border: 1px solid #ccc; */
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+    /* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+    /* text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    appearance: textfield; */
+    border: none;
+    outline: none;
+    width: auto;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.login-modal .login-footer{
+    padding: 20px;
+    border-top: 1px solid rgba(209, 209, 209, 0.5);
+    margin-top: 20px;
+    text-align: right;
+}
+
+.login-modal .submit{
+    /* background-color: purple; */
+    background: rgb(170,7,107);
+    background: linear-gradient(94deg, rgba(170,7,107,1) 0%, rgba(97,4,95,1) 100%);
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.login-modal .submit:hover{
+    background: rgb(65,41,90);
+    background: linear-gradient(94deg, rgba(65,41,90,1) 0%, rgba(47,7,67,1) 100%);
+}
+
+.login-modal .close{
+    /* background-color: red; */
+    background: rgb(237,33,58);
+    background: linear-gradient(94deg, rgba(237,33,58,1) 0%, rgba(147,41,30,1) 100%);
+}
+
+.login-modal .close:hover{
+    background: rgb(255,75,31);
+    background: linear-gradient(94deg, rgba(255,75,31,1) 0%, rgba(255,144,104,1) 100%);
+}
+
+@media screen and (max-width: 500px){
+    /* .header{
+        text-align: center;
+    } */
+    .header a img{
+        width: 70px;
+    }
+    .header h2{
+        display: none;
+    }
+    .header a.login{
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 5px 15px;
+        margin-right: 10px;
+    }
+    .quiz-registration{
+        height: 100%;
+        width: 100%;
+        padding: 50px 0;
+    }
+    .quiz-inner{
+        width: 90%;
+    }
+    .reg-title{
+        font-size: 18px;
+    }
+
+    .form-group label{
+        font-size: 16px;
+    }
+
+    .login-modal{
+        width: 90%;
+    }
+
+    .quiz-inner h2.title{
+        font-size: 20px;
+    }
+
+    .form-group h2{
+        /* font-family: sans-serif; */
+        padding-bottom: 0;
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+
+    .quiz-inner h1{
+        font-size: 28px;
+        /* color: rgba(170,7,107,0.8); */
+        color: rgb(157, 19, 170);
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width: 500px){
+    .quiz-inner h1{
+        font-size: 26px;
+    }
+}
